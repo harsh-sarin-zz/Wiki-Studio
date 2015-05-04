@@ -1,0 +1,14 @@
+{
+  "name": "WikiStudio",
+  "version": "0.0.0",
+  "description": "A web site to crowd source movie making",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "ejs": "^2.3.1",
+    "express": "~4.9.x",
+    "path-to-regexp": "^1.0.3"
+  }
+}
