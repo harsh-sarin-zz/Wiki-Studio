@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Upload New Script</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+	<style>
+	body {
+		margin-bottom: 5%;
+	}
+
+	h1 {
+		text-align: center;
+		margin-top: 10%;
+	}
+
+	#top-form {
+		padding-left: 10%;
+		padding-right: 10%;
+		padding-top: 3%;
+		width:100%;
+	}
+
+	#top-left {
+		float:left;
+		width:30%;
+	}
+
+	#top-right {
+		float:right;
+		width:30%;
+	}
+
+	#top-middle {
+		float:left;
+		width:30%;
+	}
+
+	.left {
+		float:left;
+		text-align: left;
+		width:8%;
+		padding-top: 4%;
+		font-size: 1.5em;
+	}
+
+	.script {
+		width:28%;
+		float:left;
+	}
+
+	.character {
+		width:28%;
+		float:left;
+		margin-left: 4%;
+	}
+
+	.setting {
+		width:28%;
+		float:right;
+	}
+
+	.container {
+		padding-top: 3%;
+		padding-left: 10%;
+		padding-right: 10%;
+		width:100%;
+	}
+
+	#submit {
+		text-align: center;
+		margin-top: 3%;
+	}
+
+	</style>
+
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="#">Wiki Studios</a>
+            </div>
+	 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a id="modal_trigger" href="#modal" class="btn">Register / Log In</a>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+
+    <h1>Upload A New Script</h1>
+    
+
+<div id="top-form">
+
+<form class="form-horizontal">
+<fieldset>
+
+
+<!-- Text input-->
+<div class="control-group">
+
+	<div id="top-left">
+  		<label class="control-label" for="Title">Title</label>
+ 		 <div class="controls">
+   		 <input id="Title" name="Title" type="text" placeholder="Type the script title" class="input-medium"> 
+  		 </div>
+
+		<label class="control-label" for="Author">Author</label>
+  		<div class="controls">
+   		 <input id="Author" name="Author" type="text" placeholder="Type the script author" class="input-medium"> 
+  		</div>  
+
+ 		 <div class="genre">
+  		<label class="control-label" for="Genre">Genre</label>                                    
+		<select name="genre">
+		<option value="action">Action</option>
+		<option value="romance">Romance</option>
+		<option value="horror">Horror</option>
+		<option value="animation">Animation</option>
+		<option value="drama">Drama</option>
+		<option value="comedy">Comedy</option>
+		</select>
+		</div>
+	</div>
+
+	<div id="top-middle">
+		<div class="story_summary">
+		<label class="control-label" for="summary" >Story Summary</label>
+		<div class="textarea">
+		<textarea class="form-control" rows="6" id="story_summary" placeholder="Give a brief summary about the story"></textarea>
+		</div>
+		</div>
+	</div>
+
+
+	<div id="top-right">
+		<div class="General-Production-Note">
+		<label class="control-label" for="note">General Production Note</label>
+		<div class="textarea">
+		<textarea class="form-control" rows="6" id="production-note" placeholder="Give contributors some general guidelines about video production"></textarea>
+		</div>
+		</div>
+	</div>	
+</div>
+</fieldset>
+</form>
+</div>
+
+	<div class="container">
+		<div id="scene1">
+			<p class="left"><strong>Scene 1</strong></p>
+
+			<div class="script">
+				<label class="control-label" for="note">Script</label>
+				<div class="textarea">
+				<textarea class="form-control" rows="3" id="scene1-script" placeholder="Paste your Scene 1 script here"></textarea>
+				</div>
+			</div>
+
+			<div class="character">
+				<label class="control-label" for="note">Character Guideline</label>
+				<div class="textarea">
+				<textarea class="form-control" rows="3" id="scene1-character" placeholder="Give contributors some guideline about characters in this scene"></textarea>
+				</div>
+			</div>
+
+			<div class="setting">
+				<label class="control-label" for="note">Setting Guideline</label>
+				<div class="textarea">
+				<textarea class="form-control" rows="3" id="scene1-setting" placeholder="Give contributors some guideline about settings in this scene"></textarea>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+	<div class="container">
+		<div id="scene2">
+			<p class="left"><strong>Scene 2</strong></p>
+
+			<div class="script">
+				<label class="control-label" for="note">Script</label>
+				<div class="textarea">
+				<textarea class="form-control" rows="3" id="scene2-script" placeholder="Paste your Scene 2 script here"></textarea>
+				</div>
+			</div>
+
+			<div class="character">
+				<label class="control-label" for="note">Character Guideline</label>
+				<div class="textarea">
+				<textarea class="form-control" rows="3" id="scene2-character" placeholder="Give contributors some guideline about characters in this scene"></textarea>
+				</div>
+			</div>
+
+			<div class="setting">
+				<label class="control-label" for="note">Setting Guideline</label>
+				<div class="textarea">
+				<textarea class="form-control" rows="3" id="scene2-setting" placeholder="Give contributors some guideline about settings in this scene"></textarea>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container">
+		<div id="scene3">
+			<p class="left"><strong>Scene 3</strong></p>
+
+			<div class="script">
+				<label class="control-label" for="note">Script</label>
+				<div class="textarea">
+				<textarea class="form-control" rows="3" id="scene3-script" placeholder="Paste your Scene 3 script here"></textarea>
+				</div>
+			</div>
+
+			<div class="character">
+				<label class="control-label" for="note">Character Guideline</label>
+				<div class="textarea">
+				<textarea class="form-control" rows="3" id="scene3-character"  placeholder="Give contributors some guideline about characters in this scene"></textarea>
+				</div>
+			</div>
+
+			<div class="setting">
+				<label class="control-label" for="note">Setting Guideline</label>
+				<div class="textarea">
+				<textarea class="form-control" rows="3" id="scene3-setting" placeholder="Give contributors some guideline about settings in this scene"></textarea>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container">
+		<div id="scene4">
+			<p class="left"><strong>Scene 4</strong></p>
+
+			<div class="script">
+				<label class="control-label" for="note">Script</label>
+				<div class="textarea">
+				<textarea class="form-control" rows="3" id="scene4-script" placeholder="Paste your Scene 4 script here"></textarea>
+				</div>
+			</div>
+
+			<div class="character">
+				<label class="control-label" for="note">Character Guideline</label>
+				<div class="textarea">
+				<textarea class="form-control" rows="3" id="scene4-character" placeholder="Give contributors some guideline about characters in this scene"></textarea>
+				</div>
+			</div>
+
+			<div class="setting">
+				<label class="control-label" for="note">Setting Guideline</label>
+				<div class="textarea">
+				<textarea class="form-control" rows="3" id="scene4-setting" placeholder="Give contributors some guideline about settings in this scene"></textarea>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container">
+		<div id="scene5">
+			<p class="left"><strong>Scene 5</strong></p>
+
+			<div class="script">
+				<label class="control-label" for="note">Script</label>
+				<div class="textarea">
+				<textarea class="form-control" rows="3" id="scene5-script" placeholder="Paste your Scene 5 script here"></textarea>
+				</div>
+			</div>
+
+			<div class="character">
+				<label class="control-label" for="note">Character Guideline</label>
+				<div class="textarea">
+				<textarea class="form-control" rows="3" id="scene5-character" placeholder="Give contributors some guideline about characters in this scene"></textarea>
+				</div>
+			</div>
+
+			<div class="setting">
+				<label class="control-label" for="note">Setting Guideline</label>
+				<div class="textarea">
+				<textarea class="form-control" rows="3" id="scene5-setting" placeholder="Give contributors some guideline about settings in this scene"></textarea>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container">
+		<div id="scene6">
+			<p class="left"><strong>Scene 6</strong></p>
+
+			<div class="script">
+				<label class="control-label" for="note">Script</label>
+				<div class="textarea">
+				<textarea class="form-control" rows="3" id="scene6-script" placeholder="Paste your Scene 6 script here"></textarea>
+				</div>
+			</div>
+
+			<div class="character">
+				<label class="control-label" for="note">Character Guideline</label>
+				<div class="textarea">
+				<textarea class="form-control" rows="3" id="scene6-character" placeholder="Give contributors some guideline about characters in this scene"></textarea>
+				</div>
+			</div>
+
+			<div class="setting">
+				<label class="control-label" for="note">Setting Guideline</label>
+				<div class="textarea">
+				<textarea class="form-control" rows="3" id="scene6-setting" placeholder="Give contributors some guideline about settings in this scene"></textarea>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container">
+		<div id="scene7">
+			<p class="left"><strong>Scene 7</strong></p>
+
+			<div class="script">
+				<label class="control-label" for="note">Script</label>
+				<div class="textarea">
+				<textarea class="form-control" rows="3" id="scene7-script" placeholder="Paste your Scene 7 script here"></textarea>
+				</div>
+			</div>
+
+			<div class="character">
+				<label class="control-label" for="note">Character Guideline</label>
+				<div class="textarea">
+				<textarea class="form-control" rows="3" id="scene7-character" placeholder="Give contributors some guideline about characters in this scene"></textarea>
+				</div>
+			</div>
+
+			<div class="setting">
+				<label class="control-label" for="note">Setting Guideline</label>
+				<div class="textarea">
+				<textarea class="form-control" rows="3" id="scene7-setting" placeholder="Give contributors some guideline about settings in this scene"></textarea>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="container">
+		<div id="scene8">
+			<p class="left"><strong>Scene 8</strong></p>
+
+			<div class="script">
+				<label class="control-label" for="note">Script</label>
+				<div class="textarea">
+				<textarea class="form-control" rows="3" id="scene8-script" placeholder="Paste your Scene 8 script here"></textarea>
+				</div>
+			</div>
+
+			<div class="character">
+				<label class="control-label" for="note">Character Guideline</label>
+				<div class="textarea">
+				<textarea class="form-control" rows="3" id="scene8-character" placeholder="Give contributors some guideline about characters in this scene"></textarea>
+				</div>
+			</div>
+
+			<div class="setting">
+				<label class="control-label" for="note">Setting Guideline</label>
+				<div class="textarea">
+				<textarea class="form-control" rows="3" id="scene8-setting" placeholder="Give contributors some guideline about settings in this scene"></textarea>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+
+	</div>
+
+<div id="submit"><button type="submit" class="btn btn-primary">Submit</button></div>
+
+
+
+</body>
+</html>
