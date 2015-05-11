@@ -1,0 +1,39 @@
+// Place all the styles related to the Scripts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1 {
+	font-family: 'Philosopher',sans-serif;
+	text-align: center;
+	font-size: 80px;
+	padding-top: 5%;
+	
+}
+
+nav {
+	text-align: right;
+	clear: both;
+}
+
+.top {
+	text-align: inline;
+}
+
+.existing {
+	border-left: 5%;
+	padding-left: 5%;
+}
+
+.comedy {
+	padding-top: 2%;
+}
+
+.newScript {
+	text-align: right;
+	padding-right: 10%;
+}
+
+button.link {
+	background: none;
+	border: none;
+}
