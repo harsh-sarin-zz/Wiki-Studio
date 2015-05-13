@@ -28,12 +28,20 @@
 		float:left;
 		width:65%;
 		margin-left: 2%;
+        background-color: black;
+        padding-bottom: 15px;
+        margin-right: 3%;
 	}
 
 	.scene-buttons {
-		margin-left: 3%;
+        display: inline;
 	}
-
+    
+    iframe {
+        border-color:white;
+        border-width: 1px;
+        border-style:solid;
+    }
 
 </style>
       
@@ -195,9 +203,9 @@
 
 
 <div class="video">    
-	<h2 style="margin-left: 20px;">Title of Video</h2>
-	<iframe width="853" height="480" style="margin-left: 20px; float: left;" src="https://www.youtube.com/embed/videoseries?list=PLrEnWoR732-AdR9js0bHtoXVFtHLxD_qJ" frameborder="0" allowfullscreen></iframe>
-
+	<h2 style="margin-left: 35px; color: white;">Title of Video</h2>
+        <center>
+	<iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLrEnWoR732-AdR9js0bHtoXVFtHLxD_qJ" frameborder="0" allowfullscreen></iframe>
 	<div class="scene-buttons">
 		<input class="btn btn-default btn-sm" type="button" value="Scene 1" onclick="window.open('scene-1.html','popUpWindow','height=600,width=500,left=300,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');">
 		<input class="btn btn-default btn-sm" type="button" value="Scene 2" onclick="window.open('upload script.html','popUpWindow','height=300,width=400,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');">
@@ -210,9 +218,11 @@
 		<input class="btn btn-default btn-sm" type="button" value="Scene 9" onclick="window.open('upload script.html','popUpWindow','height=300,width=400,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');">
 		<input class="btn btn-default btn-sm" type="button" value="Scene 10" onclick="window.open('upload script.html','popUpWindow','height=300,width=400,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');">
 	</div>
-
+</center>
 </div>
-
+<br></br>
+<br></br>
+<br></br>
 <div>Production Notes</div>
 <br></br>
 <div>Plot</div>
