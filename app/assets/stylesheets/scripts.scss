@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+//Home page css (index.html.erb)
 h1 {
 	font-family: 'Philosopher',sans-serif;
 	text-align: center;
@@ -19,21 +20,107 @@ nav {
 	text-align: inline;
 }
 
-.existing {
-	border-left: 5%;
-	padding-left: 5%;
-}
-
 .comedy {
 	padding-top: 2%;
-}
-
-.newScript {
-	text-align: right;
-	padding-right: 10%;
 }
 
 button.link {
 	background: none;
 	border: none;
 }
+
+body {
+	width:100%;
+	margin-left:5%;
+	margin-right:5%;
+}
+
+#newScript {
+	font-color: black;
+}
+
+.existing {
+	width:65%;
+	float:left;
+}
+
+.newScript {
+	float:right;
+	vertical-align: center;
+	/*margin-top: 24%;*/
+	margin-top: 5%;
+}
+
+#or {
+	float:left;
+	width:1%;
+	font-size: 2em;
+	vertical-align: center;
+	/*margin-top: 20%;*/
+}
+
+.mainBody{
+	width:100%;
+}
+
+
+//Upload script css (new.html.erb)
+#top-form {
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 3%;
+	width:100%;
+}
+
+#top-left {
+	float:left;
+	width:30%;
+}
+
+#top-right {
+	float:right;
+	width:30%;
+}
+
+#top-middle {
+	float:left;
+	width:30%;
+}
+
+.left {
+	float:left;
+	text-align: left;
+	width:8%;
+	padding-top: 4%;
+	font-size: 1.5em;
+}
+
+.script {
+	width:28%;
+	float:left;
+}
+
+.character {
+	width:28%;
+	float:left;
+	margin-left: 4%;
+}
+
+.setting {
+	width:28%;
+	float:right;
+}
+
+/*
+.container {
+	padding-top: 3%;
+	padding-left: 10%;
+	padding-right: 10%;
+	width:100%;
+}*/
+
+#submit {
+	text-align: center;
+	margin-top: 3%;
+}
+

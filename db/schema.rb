@@ -11,14 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150510010145) do
+ActiveRecord::Schema.define(version: 20150512150216) do
+
+  create_table "scenes", force: :cascade do |t|
+    t.string   "sceneNumber"
+    t.text     "sceneText"
+    t.text     "settingGuideline"
+    t.text     "characterGuideline"
+    t.integer  "script_id"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+  end
 
   create_table "scripts", force: :cascade do |t|
-    t.string   "scriptid"
     t.string   "scriptname"
     t.string   "authorid"
     t.string   "genre"
-    t.string   "scriptlink"
+    t.text     "summary"
+    t.text     "notes"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

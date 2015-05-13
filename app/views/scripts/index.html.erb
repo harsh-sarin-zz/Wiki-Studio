@@ -30,16 +30,16 @@
 			<h1>Wiki Studios</h1>
 		</div>
 
-		<div class="mainBody">
+		<div class="container">
 	 		<div id="scriptsDiv" class="existing">
             	<div class="row">
                 	<div class="col-lg-7 col-sm-8">
                     	<hr class="section-heading-spacer">
                     		<div class="clearfix"></div>
-                    		<h2 class="section-heading">Working on an Existing Script</h2>
-                    		<p class="lead">Click on any script to go to editing page</p>
+                    		<h2 class="section-heading">Work on an Existing Script</h2>
+                    		<p class="lead">Scripts by Genre</p>
 
-		                    <ul class="Action">
+		                    <ul class="action">
 		                    	<h4>ACTION</h3>
 		                    	<% @scriptList.each do |s| %>
 									<% if s.genre == "action"%>
@@ -50,21 +50,14 @@
                     	
 		                    <ul class="comedy">
 		                    	<h4>COMEDY</h4>
-		                    	<li>
-		                    		<a href="xx">Avenger</a>
-		                    	</li>
-		                    	<li>
-		                    		<a href="xx">Transformer</a>
-		                    	</li>
-		                    	<li>
-		                    		<a href="xx">Furious Seven</a>
-		                    	</li>
-		                    	<li>
-		                    		<a href="xx">Batman Returns</a>
-		                    	</li>
+		                    	<% @scriptList.each do |s| %>
+									<% if s.genre == "comedy"%>
+										<li><%= s.scriptname %></li>
+									<% end %>
+								<% end %>
 		                    </ul>
 
-		                    <ul class="Drama">
+		                    <ul class="drama">
 		                    	<h4>DRAMA</h3>
 		                    	<% @scriptList.each do |s| %>
 									<% if s.genre == "drama"%>
@@ -75,10 +68,12 @@
 					</div>
 				</div>
 			</div>
+
+			<h1 id="or">OR</h1>
                 
-    		<div id="newScriptDiv" class="newScript">
-       			<p><a class="btn btn-primary btn-lg" href="#" role="button">Upload New Script</a></p>
-    		</div>
+    		<div class="newScript">
+       			<p><a class="btn btn-primary btn-lg" href="scripts/new" role="button" style=>Upload New Script</a></p>
+			</div>
     	</div>
 	</body>
 </html>
