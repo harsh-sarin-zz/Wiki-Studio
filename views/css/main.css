@@ -33,3 +33,22 @@ button.link {
 	background: none;
 	border: none;
 }
+
+	.video {
+		float:left;
+		width:65%;
+		margin-left: 2%;
+        background-color: black;
+        padding-bottom: 15px;
+        margin-right: 3%;
+	}
+
+	.scene-buttons {
+        display: inline;
+	}
+    
+    iframe {
+        border-color:white;
+        border-width: 1px;
+        border-style:solid;
+    }
