@@ -3,13 +3,20 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 //Home page css (index.html.erb)
+/*
 h1 {
 	font-family: 'Philosopher',sans-serif;
 	text-align: center;
 	font-size: 80px;
 	padding-top: 5%;
-	
 }
+*/
+ h1 {
+  	font-family: 'Crafty Girls', cursive;
+  	text-align: center;
+	font-size: 80px;
+	padding-top: 5%;
+ }
 
 nav {
 	text-align: right;
