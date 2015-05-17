@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   
   resources :scripts
 
+  #routes for scenes
+  get "scenes/:id" => "scenes#show", as: :scene
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

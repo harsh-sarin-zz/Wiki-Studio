@@ -14,6 +14,13 @@
  *= require_self
  */
 
-@import "bootstrap-sprockets"
-@import "bootstrap"
-@import url(http://fonts.googleapis.com/css?family=Crafty+Girls)
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import url(https://fonts.googleapis.com/css?family=Philosopher&effect=shadow-multiple);
+
+h1 {
+	font-family: 'Philosopher',sans-serif;
+	text-align: center;
+	font-size: 80px;
+	padding-top: 5%;
+}

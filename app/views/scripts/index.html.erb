@@ -1,80 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Wiki Studios</title>
-	</head>
-	<body>
-		<nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-    		<div class="container topnav">
-        	<!-- Brand and toggle get grouped for better mobile display -->
-        	<div class="navbar-header">
-            	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                	<span class="sr-only">Toggle navigation</span>
-                	<span class="icon-bar"></span>
-                	<span class="icon-bar"></span>
-                	<span class="icon-bar"></span>
-            	</button>
-            	<a class="navbar-brand topnav" href="#">Wiki Studios</a>
-        	</div>
- 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            	<ul class="nav navbar-nav navbar-right">
-                	<li>
-                    	<a id="modal_trigger" href="#modal" class="btn">Register / Log In</a>
-                	</li>
-            	</ul>
-       		 </div>
-		</nav>
+<nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+	<div class="container topnav">
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="navbar-header">
+    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        	<span class="sr-only">Toggle navigation</span>
+        	<span class="icon-bar"></span>
+        	<span class="icon-bar"></span>
+        	<span class="icon-bar"></span>
+    	</button>
+    	<a class="navbar-brand topnav" href="#">Wiki Studios</a>
+	</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    	<ul class="nav navbar-nav navbar-right">
+        	<li>
+            	<a id="modal_trigger" href="#modal" class="btn">Register / Log In</a>
+        	</li>
+    	</ul>
+		 </div>
+</nav>
 
-		<div class="top">
-			<h1>Wiki Studios</h1>
+<div class="top">
+	<h1>Wiki Studios</h1>
+</div>
+
+<div class="container">
+		<div id="scriptsDiv" class="existing">
+    	<div class="row">
+        	<div class="col-lg-7 col-sm-8">
+            	<hr class="section-heading-spacer">
+            		<div class="clearfix"></div>
+            		<h2 class="section-heading">Work on an Existing Script</h2>
+            		<p class="lead">Scripts by Genre</p>
+
+                    <ul class="action">
+                    	<h4>ACTION</h3>
+                    	<% @scriptList.each do |s| %>
+							<% if s.genre == "action"%>
+								<li><%= link_to s.scriptname, script_path(s) %></li>
+							<% end %>
+						<% end %>
+                    </ul>
+            	
+                    <ul class="comedy">
+                    	<h4>COMEDY</h4>
+                    	<% @scriptList.each do |s| %>
+							<% if s.genre == "comedy"%>
+								<li><%= link_to s.scriptname, script_path(s) %></li>
+							<% end %>
+						<% end %>
+                    </ul>
+
+                    <ul class="drama">
+                    	<h4>DRAMA</h3>
+                    	<% @scriptList.each do |s| %>
+							<% if s.genre == "drama"%>
+								<li><%= link_to s.scriptname, script_path(s) %></li>
+							<% end %>
+						<% end %>
+                    </ul>
+			</div>
 		</div>
+	</div>
 
-		<div class="container">
-	 		<div id="scriptsDiv" class="existing">
-            	<div class="row">
-                	<div class="col-lg-7 col-sm-8">
-                    	<hr class="section-heading-spacer">
-                    		<div class="clearfix"></div>
-                    		<h2 class="section-heading">Work on an Existing Script</h2>
-                    		<p class="lead">Scripts by Genre</p>
-
-		                    <ul class="action">
-		                    	<h4>ACTION</h3>
-		                    	<% @scriptList.each do |s| %>
-									<% if s.genre == "action"%>
-										<li><%= s.scriptname %></li>
-									<% end %>
-								<% end %>
-		                    </ul>
-                    	
-		                    <ul class="comedy">
-		                    	<h4>COMEDY</h4>
-		                    	<% @scriptList.each do |s| %>
-									<% if s.genre == "comedy"%>
-										<li><%= s.scriptname %></li>
-									<% end %>
-								<% end %>
-		                    </ul>
-
-		                    <ul class="drama">
-		                    	<h4>DRAMA</h3>
-		                    	<% @scriptList.each do |s| %>
-									<% if s.genre == "drama"%>
-										<li><%= s.scriptname %></li>
-									<% end %>
-								<% end %>
-		                    </ul>
-					</div>
-				</div>
-			</div>
-
-			<h1 id="or">OR</h1>
-                
-    		<div class="newScript">
-       			<p><a class="btn btn-primary btn-lg" href="scripts/new" role="button" style=>Upload New Script</a></p>
-			</div>
-    	</div>
-	</body>
-</html>
+	<h1 id="or">OR</h1>
+        
+	<div class="newScript">
+			<p><a class="btn btn-primary btn-lg" href="scripts/new" role="button" style=>Upload New Script</a></p>
+	</div>
+</div>
 
