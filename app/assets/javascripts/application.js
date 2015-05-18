@@ -15,3 +15,4 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//$('a[data-popup]').on('click', function(e) { window.open($(this).attr('href'),'popUpWindow','height=600,width=500,left=300,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes'); e.preventDefault(); });

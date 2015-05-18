@@ -1,9 +1,14 @@
-<h2>Script Name - Scene 1</h2>
+<h2>Script Name - Scene <%= @scene.sceneNumber %></h2>
 <div class="action-button">
 	<button type="button" class="btn btn-default btn-sm" style="margin-right:2%;">Claim Scene 1</button>
 	<button type="button" class="btn btn-default btn-sm" style="margin-right:2%;">Print Scene 1 Script</button>
 	<button type="button" class="btn btn-default btn-sm" style="margin-right:2%;">Upload Video</button>
 </div>
-<p><%= @scene.sceneText %></p>
+<br>
+<br>
+<h4>Setting Guidelines</h4>
 <p><%= @scene.settingGuideline %></p>
+<h4>Character Guidelines</h4>
 <p><%= @scene.characterGuideline %></p>
+<br><br>
+<p><%= @scene.sceneText %></p>

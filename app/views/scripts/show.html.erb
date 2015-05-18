@@ -5,7 +5,7 @@
             <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
-            <a class="navbar-brand topnav" href="#">Wiki Studios</a>
+            <a class="navbar-brand topnav" href="#">Wiki Studio</a>
         </div>
  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
@@ -33,19 +33,10 @@
 	<iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLrEnWoR732-AdR9js0bHtoXVFtHLxD_qJ" frameborder="0" allowfullscreen></iframe>
 	<div class="scene-buttons">
     <% @scenes.each do |s| %>
-      <%= button_to "Scene "+s.sceneNumber, scene_path(s), method: :get, form_class: "btn btn-default btn-sm" %>
+      <%= link_to "Scene "+s.sceneNumber, scene_path(s),
+      :onclick=>"window.open(this.href,'popUpWindow', 'height=600,width=600,left=300,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');return false;" %>
     <% end %>
-    <!--
-		<input class="btn btn-default btn-sm" type="button" value="Scene 1" onclick="window.open('scene-1.html','popUpWindow','height=600,width=500,left=300,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');">
-		<input class="btn btn-default btn-sm" type="button" value="Scene 2" onclick="window.open('upload script.html','popUpWindow','height=300,width=400,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');">
-		<input class="btn btn-default btn-sm" type="button" value="Scene 3" onclick="window.open('upload script.html','popUpWindow','height=300,width=400,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');">
-		<input class="btn btn-default btn-sm" type="button" value="Scene 4" onclick="window.open('upload script.html','popUpWindow','height=300,width=400,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');">
-		<input class="btn btn-default btn-sm" type="button" value="Scene 5" onclick="window.open('upload script.html','popUpWindow','height=300,width=400,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');">
-		<input class="btn btn-default btn-sm" type="button" value="Scene 6" onclick="window.open('upload script.html','popUpWindow','height=300,width=400,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');">
-		<input class="btn btn-default btn-sm" type="button" value="Scene 7" onclick="window.open('upload script.html','popUpWindow','height=300,width=400,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');">
-		<input class="btn btn-default btn-sm" type="button" value="Scene 8" onclick="window.open('upload script.html','popUpWindow','height=300,width=400,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');">
-		<input class="btn btn-default btn-sm" type="button" value="Scene 9" onclick="window.open('upload script.html','popUpWindow','height=300,width=400,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');">
-		<input class="btn btn-default btn-sm" type="button" value="Scene 10" onclick="window.open('upload script.html','popUpWindow','height=300,width=400,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');">-->
+    <!-- method: :get, form_class: "btn btn-default btn-sm"-->
 	</div>
 </center>
 </div>
@@ -59,7 +50,18 @@
 <p><%= @script.summary%></p>
 <br></br>
 <ul class="share-buttons">
-  <li><a href="https://www.facebook.com/sharer/sharer.php?u=&t=" title="Share on Facebook" target="_blank"><img src="flat_web_icon_set/color/Facebook.png"></a></li>
-  <li><a href="https://twitter.com/intent/tweet?source=&text=:%20" target="_blank" title="Tweet"><img src="images/flat_web_icon_set/color/Twitter.png"></a></li>
-  <li><a href="https://plus.google.com/share?url=" target="_blank" title="Share on Google+"><img src="images/flat_web_icon_set/color/Google+.png"></a></li>
+  <td><a href="https://www.facebook.com/sharer/sharer.php?u=&t=" title="Share on Facebook" target="_blank"><%= image_tag "flat_web_icon_set/color/Facebook.png" %></a></td>
+  <td><a href="https://twitter.com/intent/tweet?source=&text=:%20" target="_blank" title="Tweet"><%= image_tag "flat_web_icon_set/color/Twitter.png" %></a></td>
+  <td><a href="https://plus.google.com/share?url=" target="_blank" title="Share on Google+"><%= image_tag "flat_web_icon_set/color/GooglePlus.png" %></a></td>
 </ul>
+
+<div style="margin-left:1%; margin-top:18%;">
+<!-- Begin Comments JavaScript Code --><script type="text/javascript" async>function ajaxpath_5553b0cab54c2(url){return window.location.href == '' ? url : url.replace('&s=','&s=' + escape(window.location.href));}(function(){document.write('<div id="fcs_div_5553b0cab54c2"><a title="free comment script" href="http://www.freecommentscript.com">&nbsp;&nbsp;<b>Free HTML User Comments</b>...</a></div>');fcs_5553b0cab54c2=document.createElement('script');fcs_5553b0cab54c2.type="text/javascript";fcs_5553b0cab54c2.src=ajaxpath_5553b0cab54c2((document.location.protocol=="https:"?"https:":"http:")+"//www.freecommentscript.com/GetComments2.php?p=5553b0cab54c2&s=&Size=10#!5553b0cab54c2");setTimeout("document.getElementById('fcs_div_5553b0cab54c2').appendChild(fcs_5553b0cab54c2)",1);})();</script><noscript><div><a href="http://www.freecommentscript.com" title="free html user comment box">Free Comment Script</a></div></noscript><!-- End Comments JavaScript Code -->
+</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/jquery.leanModal.min.js"></script>
