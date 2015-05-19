@@ -16,14 +16,6 @@
         </div>
 </nav>
 
-<form name="cse" id="searchbox_demo" action="https://www.google.com" style="float: right; margin-right: 8%;">
-  <input type="hidden" name="cref" value="" />
-  <input type="hidden" name="ie" value="utf-8" />
-  <input type="hidden" name="hl" value="" />
-  <input name="q" type="text" size="40" />
-  <input type="submit" name="sa" value="Search" />
-</form>
-<script type="text/javascript" src="https%3A%2F%2Fcse.google.com%2Fcse/tools/onthefly?form=searchbox_demo&lang="></script>
 <br></br>
 <br></br>
 
@@ -33,7 +25,7 @@
 	<iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLrEnWoR732-AdR9js0bHtoXVFtHLxD_qJ" frameborder="0" allowfullscreen></iframe>
 	<div class="scene-buttons">
     <% @scenes.each do |s| %>
-      <%= link_to "Scene "+s.sceneNumber, scene_path(s),
+      <%= link_to "Scene "+s.sceneNumber, script_scene_path(@script, s), class: "btn btn-default btn-sm",
       :onclick=>"window.open(this.href,'popUpWindow', 'height=600,width=600,left=300,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');return false;" %>
     <% end %>
     <!-- method: :get, form_class: "btn btn-default btn-sm"-->
@@ -54,14 +46,3 @@
   <td><a href="https://twitter.com/intent/tweet?source=&text=:%20" target="_blank" title="Tweet"><%= image_tag "flat_web_icon_set/color/Twitter.png" %></a></td>
   <td><a href="https://plus.google.com/share?url=" target="_blank" title="Share on Google+"><%= image_tag "flat_web_icon_set/color/GooglePlus.png" %></a></td>
 </ul>
-
-<div style="margin-left:1%; margin-top:18%;">
-<!-- Begin Comments JavaScript Code --><script type="text/javascript" async>function ajaxpath_5553b0cab54c2(url){return window.location.href == '' ? url : url.replace('&s=','&s=' + escape(window.location.href));}(function(){document.write('<div id="fcs_div_5553b0cab54c2"><a title="free comment script" href="http://www.freecommentscript.com">&nbsp;&nbsp;<b>Free HTML User Comments</b>...</a></div>');fcs_5553b0cab54c2=document.createElement('script');fcs_5553b0cab54c2.type="text/javascript";fcs_5553b0cab54c2.src=ajaxpath_5553b0cab54c2((document.location.protocol=="https:"?"https:":"http:")+"//www.freecommentscript.com/GetComments2.php?p=5553b0cab54c2&s=&Size=10#!5553b0cab54c2");setTimeout("document.getElementById('fcs_div_5553b0cab54c2').appendChild(fcs_5553b0cab54c2)",1);})();</script><noscript><div><a href="http://www.freecommentscript.com" title="free html user comment box">Free Comment Script</a></div></noscript><!-- End Comments JavaScript Code -->
-</div>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-<script src="js/jquery-1.11.0.min.js"></script>
-<script src="js/jquery.leanModal.min.js"></script>

@@ -1,0 +1,10 @@
+<h2>Upload Video</h2>
+</br>
+<div id="chooseFile" style="padding-left:30%;">
+	<%= form_for [:script, :scene, @clip] do |f| %>
+		<%= f.label :video_link %>
+		<%= f.file_field :vid %>
+		<br><br>
+		<%= f.submit "Submit", :class=>"btn btn-primary" %>
+	<% end %>
+</div>

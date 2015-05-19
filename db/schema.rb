@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150512150216) do
+ActiveRecord::Schema.define(version: 20150519180130) do
+
+  create_table "clips", force: :cascade do |t|
+    t.string   "vid_file_name"
+    t.string   "vid_content_type"
+    t.integer  "vid_file_size"
+    t.datetime "vid_updated_at"
+    t.integer  "scene_id"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
 
   create_table "scenes", force: :cascade do |t|
     t.string   "sceneNumber"

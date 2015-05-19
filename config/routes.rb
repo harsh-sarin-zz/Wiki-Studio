@@ -4,9 +4,14 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   
-  root 'scripts#index' 
-  
-  resources :scripts
+  root 'scripts#index'
+
+  resources :scripts do
+    resources :scenes do
+      resources :clips
+    end
+  end
+
 
   #routes for scenes
   get "scenes/:id" => "scenes#show", as: :scene

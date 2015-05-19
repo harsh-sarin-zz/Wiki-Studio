@@ -52,7 +52,7 @@ Right on my finger!",
 settingGuideline: "Barnyard Scene", characterGuideline: "Dorothy wears a blue dress.", script_id: script1.id)
 
 
-Scene.create(sceneNumber: "2", sceneText: "Dorothy
+Scene.create(sceneNumber: "3", sceneText: "Dorothy
 Oh - oh, the poor little things.  Oh, but Aunt Em, Miss Gulch hit Toto right over the back with a rake 
 just because she says he gets in her garden and chases her nasty old cat every day!
 Aunt Em
@@ -78,7 +78,7 @@ Hunk
 Right on my finger!", 
 settingGuideline: "Barnyard Scene", characterGuideline: "Dorothy wears a blue dress.", script_id: script1.id)
 
-Scene.create(sceneNumber: "3", sceneText: "Zeke 
+Scene.create(sceneNumber: "4", sceneText: "Zeke 
 It's a lucky thing it wasn't your head.
 Dorothy
 Zeke, what am I going to do about Miss Gulch? Just because Toto chases her old cat - 
@@ -106,7 +106,7 @@ Zeke
 Then the next time she squawks, walk right up to her and spit in her eye. That's what I'd do.", 
 settingGuideline: "Barnyard Scene", characterGuideline: "Dorothy wears a blue dress.", script_id: script1.id)
 
-Scene.create(sceneNumber: "4", sceneText: "Dorothy
+Scene.create(sceneNumber: "5", sceneText: "Dorothy
 Oh! Oh! Oh, Zeke! Zeke! Zeke, get me out of here! Help! Oh!
 Hickory
 Are you all right, Dorothy?
@@ -115,7 +115,7 @@ Yes, I'm all right. Oh. I fell in and and Zeke - Why, Zeke, you - you're just as
 settingGuideline: "Barnyard Scene", characterGuideline: "Dorothy wears a blue dress.", script_id: script1.id)
 
 
-Scene.create(sceneNumber: "5", sceneText: "Zeke & Dorothy
+Scene.create(sceneNumber: "6", sceneText: "Zeke & Dorothy
 Hunk
 What's the matter, gonna let a little old pig make a coward out of you?
 Hickory
@@ -133,7 +133,7 @@ Aunt Em
 Well, don't start posing for it now.  Here, here - can't work on an empty stomach.  Have some crullers.", 
 settingGuideline: "Barnyard Scene", characterGuideline: "Dorothy wears a blue dress.", script_id: script1.id)
 
-Scene.create(sceneNumber: "6", sceneText: "Hunk
+Scene.create(sceneNumber: "7", sceneText: "Hunk
 Gosh, Mrs. Gale.
 Aunt Em
 Just fried.
@@ -150,7 +150,7 @@ Zeke
 Yes, Ma'am.", 
 settingGuideline: "Barnyard Scene", characterGuideline: "Dorothy wears a blue dress.", script_id: script1.id)
 
-Scene.create(sceneNumber: "7", sceneText: "Dorothy
+Scene.create(sceneNumber: "8", sceneText: "Dorothy
 Aunti Em, really - do you know what Miss Gulch said she was going to do to Toto? 
 She said she was going to - 
 Aunt Em
@@ -167,7 +167,7 @@ It's far, far away - behind the moon - beyond the rain -",
 settingGuideline: "Barnyard Scene", characterGuideline: "Dorothy wears a blue dress.", script_id: script1.id)
 
 
-Scene.create(sceneNumber: "8", sceneText: "Somewhere, over the rainbow, way up high. There's a land that I heard of 
+Scene.create(sceneNumber: "9", sceneText: "Somewhere, over the rainbow, way up high. There's a land that I heard of 
 Once in a lullaby.
 Somewhere, over the rainbow, skies are blue. And the dreams that you dare to dream
 Really do come true.
