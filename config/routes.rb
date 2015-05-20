@@ -11,6 +11,10 @@ Rails.application.routes.draw do
       resources :clips
     end
   end
+    
+    resources :scripts do
+        resources :comments
+        end
 
 
   #routes for scenes

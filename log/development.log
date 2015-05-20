@@ -22639,3 +22639,500 @@ ActionView::MissingTemplate (Missing template clips/create, application/create w
   Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
   Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (23.6ms)
 Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x007fa1ec31c190 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007fa1eca53dc8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007fa1ed3976c8 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started GET "/" for ::1 at 2015-05-20 10:00:50 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ScriptsController#index as HTML
+  [1m[35mScript Load (0.4ms)[0m  SELECT "scripts".* FROM "scripts"
+  Rendered scripts/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 5137ms (Views: 5113.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/scenes.self-5231b3e38b8c7d71c018f96483ed5f56d442398d50262fe3cd883acb51cae09b.css?body=1" for ::1 at 2015-05-20 10:00:56 -0500
+
+
+Started GET "/assets/clips.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-20 10:00:56 -0500
+
+
+Started GET "/assets/scripts.self-37f5157193785c4fcebfa42be38db9d3c90cce0827cd134c334964b67c7a0135.css?body=1" for ::1 at 2015-05-20 10:00:56 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-20 10:00:56 -0500
+
+
+Started GET "/assets/application.self-505cbd898605200cc463e5c13fab47a08b2536fb0fdcfef9906aaeef0e7277fe.css?body=1" for ::1 at 2015-05-20 10:00:56 -0500
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2015-05-20 10:00:56 -0500
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2015-05-20 10:00:56 -0500
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2015-05-20 10:00:56 -0500
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2015-05-20 10:00:56 -0500
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2015-05-20 10:00:56 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2015-05-20 10:00:56 -0500
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2015-05-20 10:00:56 -0500
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2015-05-20 10:00:56 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2015-05-20 10:00:56 -0500
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2015-05-20 10:00:56 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2015-05-20 10:00:56 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-05-20 10:00:56 -0500
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2015-05-20 10:00:56 -0500
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-20 10:00:56 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-20 10:00:56 -0500
+
+
+Started GET "/assets/clips.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-20 10:00:56 -0500
+
+
+Started GET "/assets/scenes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-20 10:00:56 -0500
+
+
+Started GET "/assets/scripts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-20 10:00:56 -0500
+
+
+Started GET "/assets/application.self-b33329976d44262266e0073bfcac02aa87cb5773cf106eee2014909e7a9092aa.js?body=1" for ::1 at 2015-05-20 10:00:56 -0500
+
+
+Started GET "/scripts/new" for ::1 at 2015-05-20 10:01:02 -0500
+Processing by ScriptsController#new as HTML
+  Rendered scripts/new.html.erb within layouts/application (34.4ms)
+Completed 200 OK in 132ms (Views: 130.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/scripts/1" for ::1 at 2015-05-20 10:01:11 -0500
+Processing by ScriptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mScript Load (0.4ms)[0m  [1mSELECT  "scripts".* FROM "scripts" WHERE "scripts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mScene Load (1.1ms)[0m  SELECT "scenes".* FROM "scenes" WHERE "scenes"."script_id" = ?  [["script_id", 1]]
+  Rendered scripts/show.html.erb within layouts/application (38.7ms)
+Completed 200 OK in 168ms (Views: 133.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/flat_web_icon_set/color/Facebook-89c5625aa0ecfeaa47ae9da990cda5ab80fe8088ab1cd55ee7394e870de5eafa.png" for ::1 at 2015-05-20 10:01:12 -0500
+
+
+Started GET "/assets/flat_web_icon_set/color/Twitter-49c45399074a6af07b176d55bb85b3de42b2c2889bf9efa37310b4e71cf14f43.png" for ::1 at 2015-05-20 10:01:12 -0500
+
+
+Started GET "/assets/flat_web_icon_set/color/GooglePlus-1e7a8021a029a0b1b97d9df2c059ad4fe80ff8d9db9564c593bdde97df48f5ff.png" for ::1 at 2015-05-20 10:01:12 -0500
+
+
+Started GET "/scripts/1/scenes/1" for ::1 at 2015-05-20 10:01:14 -0500
+Processing by ScenesController#show as HTML
+  Parameters: {"script_id"=>"1", "id"=>"1"}
+  [1m[36mScene Load (0.2ms)[0m  [1mSELECT  "scenes".* FROM "scenes" WHERE "scenes"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mScript Load (0.1ms)[0m  SELECT  "scripts".* FROM "scripts" WHERE "scripts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered scenes/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 108ms (Views: 104.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/scripts/1/scenes/1/clips/new" for ::1 at 2015-05-20 10:01:25 -0500
+Processing by ClipsController#new as HTML
+  Parameters: {"script_id"=>"1", "scene_id"=>"1"}
+  Rendered clips/new.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 143ms (Views: 126.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/scripts/1/scenes/1" for ::1 at 2015-05-20 10:01:40 -0500
+Processing by ScenesController#show as HTML
+  Parameters: {"script_id"=>"1", "id"=>"1"}
+  [1m[36mScene Load (0.7ms)[0m  [1mSELECT  "scenes".* FROM "scenes" WHERE "scenes"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mScript Load (0.2ms)[0m  SELECT  "scripts".* FROM "scripts" WHERE "scripts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered scenes/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 465ms (Views: 445.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/scripts/1" for ::1 at 2015-05-20 10:04:44 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ScriptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mScript Load (0.5ms)[0m  SELECT  "scripts".* FROM "scripts" WHERE "scripts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mScene Load (1.2ms)[0m  [1mSELECT "scenes".* FROM "scenes" WHERE "scenes"."script_id" = ?[0m  [["script_id", 1]]
+  Rendered scripts/show.html.erb within layouts/application (232.7ms)
+Completed 200 OK in 576ms (Views: 522.0ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for ::1 at 2015-05-20 10:04:47 -0500
+Processing by ScriptsController#index as HTML
+  [1m[35mScript Load (0.2ms)[0m  SELECT "scripts".* FROM "scripts"
+  Rendered scripts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 97ms (Views: 96.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/scripts/1" for ::1 at 2015-05-20 10:04:49 -0500
+Processing by ScriptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mScript Load (0.1ms)[0m  [1mSELECT  "scripts".* FROM "scripts" WHERE "scripts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mScene Load (0.1ms)[0m  SELECT "scenes".* FROM "scenes" WHERE "scenes"."script_id" = ?  [["script_id", 1]]
+  Rendered scripts/show.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 156ms (Views: 154.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/scripts/1/scenes/9" for ::1 at 2015-05-20 10:04:51 -0500
+Processing by ScenesController#show as HTML
+  Parameters: {"script_id"=>"1", "id"=>"9"}
+  [1m[36mScene Load (0.2ms)[0m  [1mSELECT  "scenes".* FROM "scenes" WHERE "scenes"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35mScript Load (0.1ms)[0m  SELECT  "scripts".* FROM "scripts" WHERE "scripts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered scenes/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 93ms (Views: 90.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/scripts/1/scenes/9/clips/new" for ::1 at 2015-05-20 10:04:53 -0500
+Processing by ClipsController#new as HTML
+  Parameters: {"script_id"=>"1", "scene_id"=>"9"}
+  Rendered clips/new.html.erb within layouts/application (127.6ms)
+Completed 200 OK in 272ms (Views: 238.1ms | ActiveRecord: 17.6ms)
+
+
+Started POST "/scripts/1/scenes/9/clips" for ::1 at 2015-05-20 10:05:01 -0500
+Processing by ClipsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4bSANnWA5iy1C3geCy6PyaQuyy48B1YihSjut08QDh6UQBdb44K78IcuxJnrMIPcjRyOJDJRDE/2073hiW2ojg==", "commit"=>"Submit", "script_id"=>"1", "scene_id"=>"9"}
+  [1m[36mScript Load (1.3ms)[0m  [1mSELECT  "scripts".* FROM "scripts" WHERE "scripts"."id" = ? LIMIT 1[0m  [["id", 1]]
+DEPRECATION WARNING: You are passing an instance of ActiveRecord::Base to `find`. Please pass the id of the object by calling `.id`. (called from create at /Users/rosaliechan/GitHub/Wiki-Studio/app/controllers/clips_controller.rb:10)
+  [1m[35mScene Load (0.6ms)[0m  SELECT  "scenes".* FROM "scenes" WHERE "scenes"."script_id" = ? AND "scenes"."id" = ? LIMIT 1  [["script_id", 1], ["id", 1]]
+Completed 400 Bad Request in 33ms (ActiveRecord: 1.9ms)
+
+ActionController::ParameterMissing (param is missing or the value is empty: clip):
+  app/controllers/clips_controller.rb:16:in `clip_params'
+  app/controllers/clips_controller.rb:11:in `create'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.1ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x007fea2ba95e30 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007fea2ba95278 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007fea2c808298 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started GET "/" for ::1 at 2015-05-20 10:13:22 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ScriptsController#index as HTML
+  [1m[35mScript Load (0.5ms)[0m  SELECT "scripts".* FROM "scripts"
+  Rendered scripts/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 3520ms (Views: 3494.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-20 10:13:26 -0500
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-20 10:13:26 -0500
+
+
+Started GET "/scripts/1" for ::1 at 2015-05-20 10:13:28 -0500
+Processing by ScriptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mScript Load (0.6ms)[0m  [1mSELECT  "scripts".* FROM "scripts" WHERE "scripts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mScene Load (0.9ms)[0m  SELECT "scenes".* FROM "scenes" WHERE "scenes"."script_id" = ?  [["script_id", 1]]
+  Rendered scripts/show.html.erb within layouts/application (26.7ms)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 1.8ms)
+
+ActionView::Template::Error (undefined method `comments' for nil:NilClass):
+    52: <br></br>
+    53: 
+    54: <h2>Comments</h2>
+    55: <% @article.comments.each do |comment| %>
+    56:   <p>
+    57:     <strong>Commenter:</strong>
+    58:     <%= comment.commenter %>
+  app/views/scripts/show.html.erb:55:in `_app_views_scripts_show_html_erb__3421512100179691938_70210295597660'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (19.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (45.5ms)
+
+
+Started GET "/scripts/1" for ::1 at 2015-05-20 10:13:29 -0500
+Processing by ScriptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mScript Load (0.1ms)[0m  [1mSELECT  "scripts".* FROM "scripts" WHERE "scripts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mScene Load (0.2ms)[0m  SELECT "scenes".* FROM "scenes" WHERE "scenes"."script_id" = ?  [["script_id", 1]]
+  Rendered scripts/show.html.erb within layouts/application (9.2ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `comments' for nil:NilClass):
+    52: <br></br>
+    53: 
+    54: <h2>Comments</h2>
+    55: <% @article.comments.each do |comment| %>
+    56:   <p>
+    57:     <strong>Commenter:</strong>
+    58:     <%= comment.commenter %>
+  app/views/scripts/show.html.erb:55:in `_app_views_scripts_show_html_erb__3421512100179691938_70210337998680'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (11.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (24.8ms)
+
+
+Started GET "/" for ::1 at 2015-05-20 10:14:05 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ScriptsController#index as HTML
+  [1m[35mScript Load (0.4ms)[0m  SELECT "scripts".* FROM "scripts"
+  Rendered scripts/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 477ms (Views: 453.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/scripts/1" for ::1 at 2015-05-20 10:14:08 -0500
+Processing by ScriptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mScript Load (0.2ms)[0m  [1mSELECT  "scripts".* FROM "scripts" WHERE "scripts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mScene Load (1.0ms)[0m  SELECT "scenes".* FROM "scenes" WHERE "scenes"."script_id" = ?  [["script_id", 1]]
+  Rendered scripts/show.html.erb within layouts/application (74.6ms)
+Completed 500 Internal Server Error in 103ms (ActiveRecord: 1.5ms)
+
+ActionView::Template::Error (undefined method `comments' for #<Script:0x007fafb12f8a38>):
+    52: <br></br>
+    53: 
+    54: <h2>Comments</h2>
+    55: <% @script.comments.each do |comment| %>
+    56:   <p>
+    57:     <strong>Commenter:</strong>
+    58:     <%= comment.commenter %>
+  app/views/scripts/show.html.erb:55:in `_app_views_scripts_show_html_erb___3921943562668239550_70196284639860'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (12.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (79.5ms)
+
+
+Started GET "/scripts/1" for ::1 at 2015-05-20 10:14:09 -0500
+Processing by ScriptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mScript Load (0.2ms)[0m  [1mSELECT  "scripts".* FROM "scripts" WHERE "scripts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mScene Load (0.2ms)[0m  SELECT "scenes".* FROM "scenes" WHERE "scenes"."script_id" = ?  [["script_id", 1]]
+  Rendered scripts/show.html.erb within layouts/application (9.7ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `comments' for #<Script:0x007fafaaf69aa8>):
+    52: <br></br>
+    53: 
+    54: <h2>Comments</h2>
+    55: <% @script.comments.each do |comment| %>
+    56:   <p>
+    57:     <strong>Commenter:</strong>
+    58:     <%= comment.commenter %>
+  app/views/scripts/show.html.erb:55:in `_app_views_scripts_show_html_erb___3921943562668239550_70196232291720'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (56.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (73.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (11.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (25.6ms)
+
+
+Started GET "/" for ::1 at 2015-05-20 10:17:29 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ScriptsController#index as HTML
+  [1m[35mScript Load (0.4ms)[0m  SELECT "scripts".* FROM "scripts"
+  Rendered scripts/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 515ms (Views: 490.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/scripts/1" for ::1 at 2015-05-20 10:17:32 -0500
+Processing by ScriptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mScript Load (0.3ms)[0m  [1mSELECT  "scripts".* FROM "scripts" WHERE "scripts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mScene Load (1.1ms)[0m  SELECT "scenes".* FROM "scenes" WHERE "scenes"."script_id" = ?  [["script_id", 1]]
+  Rendered scripts/show.html.erb within layouts/application (26.1ms)
+Completed 500 Internal Server Error in 107ms (ActiveRecord: 1.7ms)
+
+ActionView::Template::Error (undefined method `comments' for #<Script:0x007f84f2b38098>):
+    52: <br></br>
+    53: 
+    54: <h2>Comments</h2>
+    55: <%= render @script.comments %>
+    56:  
+    57: <h2>Add a comment:</h2>
+    58: <%= form_for([@script, @script.comments.build]) do |f| %>
+  app/views/scripts/show.html.erb:55:in `_app_views_scripts_show_html_erb__3032249400748614693_70104442178160'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (13.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (31.8ms)
+
+
+Started GET "/scripts/1" for ::1 at 2015-05-20 10:17:32 -0500
+Processing by ScriptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mScript Load (0.1ms)[0m  [1mSELECT  "scripts".* FROM "scripts" WHERE "scripts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mScene Load (0.1ms)[0m  SELECT "scenes".* FROM "scenes" WHERE "scenes"."script_id" = ?  [["script_id", 1]]
+  Rendered scripts/show.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `comments' for #<Script:0x007f84f3307b48>):
+    52: <br></br>
+    53: 
+    54: <h2>Comments</h2>
+    55: <%= render @script.comments %>
+    56:  
+    57: <h2>Add a comment:</h2>
+    58: <%= form_for([@script, @script.comments.build]) do |f| %>
+  app/views/scripts/show.html.erb:55:in `_app_views_scripts_show_html_erb__3032249400748614693_70104496219240'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (12.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (26.9ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateComments (20150520152308)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.3ms)[0m  [1mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "commenter" varchar, "body" text, "script_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.6ms)[0m  select sqlite_version(*)
+  [1m[36m (0.9ms)[0m  [1mCREATE  INDEX "index_comments_on_script_id" ON "comments" ("script_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150520152308"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.4ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_script_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_script_id' AND type='index'
+[0m
+
+
+Started GET "/" for ::1 at 2015-05-20 10:28:34 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ScriptsController#index as HTML
+  [1m[35mScript Load (0.6ms)[0m  SELECT "scripts".* FROM "scripts"
+  Rendered scripts/index.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 550ms (Views: 512.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/scripts/1" for ::1 at 2015-05-20 10:28:37 -0500
+Processing by ScriptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mScript Load (1.0ms)[0m  [1mSELECT  "scripts".* FROM "scripts" WHERE "scripts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mScene Load (1.1ms)[0m  SELECT "scenes".* FROM "scenes" WHERE "scenes"."script_id" = ?  [["script_id", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."script_id" = ?[0m  [["script_id", 1]]
+  Rendered scripts/show.html.erb within layouts/application (117.1ms)
+Completed 200 OK in 293ms (Views: 265.4ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/scripts/1/comments" for ::1 at 2015-05-20 10:28:50 -0500
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"D+EMljtNKhJjgApmOOicMnY1fbnzGY/F1CwWXpkiTwt6FZv7rU93zlGltuHY9pAnXwc4s/1P1ain10UIX1/pmw==", "comment"=>{"commenter"=>"User", "body"=>"What a great movie!"}, "commit"=>"Create Comment", "script_id"=>"1"}
+  [1m[35mScript Load (0.2ms)[0m  SELECT  "scripts".* FROM "scripts" WHERE "scripts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "comments" ("commenter", "body", "script_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["commenter", "User"], ["body", "What a great movie!"], ["script_id", 1], ["created_at", "2015-05-20 15:28:50.484598"], ["updated_at", "2015-05-20 15:28:50.484598"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/scripts/1
+Completed 302 Found in 11ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/scripts/1" for ::1 at 2015-05-20 10:28:50 -0500
+Processing by ScriptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mScript Load (0.1ms)[0m  SELECT  "scripts".* FROM "scripts" WHERE "scripts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mScene Load (0.3ms)[0m  [1mSELECT "scenes".* FROM "scenes" WHERE "scenes"."script_id" = ?[0m  [["script_id", 1]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."script_id" = ?  [["script_id", 1]]
+  Rendered scripts/show.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 132ms (Views: 129.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/scripts/1" for ::1 at 2015-05-20 10:29:40 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ScriptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mScript Load (0.5ms)[0m  SELECT  "scripts".* FROM "scripts" WHERE "scripts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mScene Load (1.2ms)[0m  [1mSELECT "scenes".* FROM "scenes" WHERE "scenes"."script_id" = ?[0m  [["script_id", 1]]
+  [1m[35mComment Load (1.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."script_id" = ?  [["script_id", 1]]
+  Rendered scripts/show.html.erb within layouts/application (255.5ms)
+Completed 200 OK in 591ms (Views: 531.6ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/scripts/1" for ::1 at 2015-05-20 10:29:58 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ScriptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mScript Load (0.5ms)[0m  SELECT  "scripts".* FROM "scripts" WHERE "scripts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mScene Load (1.1ms)[0m  [1mSELECT "scenes".* FROM "scenes" WHERE "scenes"."script_id" = ?[0m  [["script_id", 1]]
+  [1m[35mComment Load (0.5ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."script_id" = ?  [["script_id", 1]]
+  Rendered scripts/show.html.erb within layouts/application (282.2ms)
+Completed 200 OK in 621ms (Views: 560.1ms | ActiveRecord: 3.0ms)

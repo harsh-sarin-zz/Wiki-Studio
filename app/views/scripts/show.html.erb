@@ -23,6 +23,7 @@
 	<h2 style="margin-left: 35px; color: white;">Title of Video</h2>
         <center>
 	<iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLrEnWoR732-AdR9js0bHtoXVFtHLxD_qJ" frameborder="0" allowfullscreen></iframe>
+            <br></br>
 	<div class="scene-buttons">
     <% @scenes.each do |s| %>
       <%= link_to "Scene "+s.sceneNumber, script_scene_path(@script, s), class: "btn btn-default btn-sm",
@@ -46,3 +47,36 @@
   <td><a href="https://twitter.com/intent/tweet?source=&text=:%20" target="_blank" title="Tweet"><%= image_tag "flat_web_icon_set/color/Twitter.png" %></a></td>
   <td><a href="https://plus.google.com/share?url=" target="_blank" title="Share on Google+"><%= image_tag "flat_web_icon_set/color/GooglePlus.png" %></a></td>
 </ul>
+<br></br>
+<br></br>
+<br></br>
+
+<div style="margin-left:20px;">
+<h2>Comments</h2>
+<% @script.comments.each do |comment| %>
+  <p>
+    <strong>Commenter:</strong>
+    <%= comment.commenter %>
+  </p>
+ 
+  <p>
+    <strong>Comment:</strong>
+    <%= comment.body %>
+  </p>
+<% end %>
+ 
+<h2>Add a comment:</h2>
+<%= form_for([@script, @script.comments.build]) do |f| %>
+  <p>
+    <%= f.label :commenter %><br>
+    <%= f.text_field :commenter %>
+  </p>
+  <p>
+    <%= f.label :body %><br>
+    <%= f.text_area :body %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+    </div>
