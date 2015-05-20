@@ -23136,3 +23136,14 @@ Processing by ScriptsController#show as HTML
   [1m[35mComment Load (0.5ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."script_id" = ?  [["script_id", 1]]
   Rendered scripts/show.html.erb within layouts/application (282.2ms)
 Completed 200 OK in 621ms (Views: 560.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/scripts/1" for ::1 at 2015-05-20 10:35:17 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ScriptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mScript Load (0.5ms)[0m  SELECT  "scripts".* FROM "scripts" WHERE "scripts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mScene Load (1.3ms)[0m  [1mSELECT "scenes".* FROM "scenes" WHERE "scenes"."script_id" = ?[0m  [["script_id", 1]]
+  [1m[35mComment Load (0.6ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."script_id" = ?  [["script_id", 1]]
+  Rendered scripts/show.html.erb within layouts/application (280.8ms)
+Completed 200 OK in 615ms (Views: 557.3ms | ActiveRecord: 3.4ms)
