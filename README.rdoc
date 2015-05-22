@@ -1,0 +1,8 @@
+To run the server, run the following command in terminal.
+
+cd Wiki-Studio
+bin/rails server
+
+To view the webpage, open the follwoing URL in the browser.
+
+http://localhost:3000/scripts

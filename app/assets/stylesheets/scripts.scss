@@ -1,0 +1,146 @@
+// Place all the styles related to the Scripts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+//Home page css (index.html.erb)
+
+nav {
+	text-align: right;
+	clear: both;
+}
+
+.top {
+	text-align: inline;
+}
+/*
+.comedy {
+	padding-top: 2%;
+}
+*/
+button.link {
+	background: none;
+	border: none;
+}
+
+body {
+	width:100%;
+	margin-left:5%;
+	margin-right:5%;
+}
+
+#newScript {
+	font-color: black;
+}
+
+.existing {
+	width:65%;
+	float:left;
+}
+
+.newScript {
+	float:right;
+	vertical-align: center;
+	/*margin-top: 24%;*/
+	margin-top: 5%;
+}
+
+#or {
+	float:left;
+	width:1%;
+	font-size: 2em;
+	vertical-align: center;
+	/*margin-top: 20%;*/
+}
+
+.mainBody{
+	width:100%;
+}
+
+
+//Upload script css (new.html.erb)
+#top-form {
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 3%;
+	width:100%;
+}
+
+#top-left {
+	float:left;
+	width:30%;
+}
+
+#top-right {
+	float:right;
+	width:30%;
+}
+
+#top-middle {
+	float:left;
+	width:30%;
+}
+
+.left {
+	float:left;
+	text-align: left;
+	width:8%;
+	padding-top: 4%;
+	font-size: 1.5em;
+}
+
+.script {
+	width:28%;
+	float:left;
+}
+
+.character {
+	width:28%;
+	float:left;
+	margin-left: 4%;
+}
+
+.setting {
+	width:28%;
+	float:right;
+}
+
+#submit {
+	text-align: center;
+	margin-top: 3%;
+}
+
+.video {
+	float:left;
+	width:65%;
+	margin-left: 2%;
+    background-color: black;
+    padding-bottom: 15px;
+    margin-right: 3%;
+}
+
+.scene-buttons-container {
+    display: inline;
+}
+
+.scene_buttons_blue_light{
+	background-color: #33CCFF;
+	width: 100%;
+	border: 1px solid #666;
+	padding: 5px 5px 5px 5px;
+	text-align: center;
+}
+
+.scene_buttons_blue_dark{
+	background-color: #0000FF;
+	width: 100%;
+	border: 1px solid #666;
+	padding: 5px 5px 5px 5px;
+	text-align: center;
+}
+
+iframe {
+    border-color:white;
+    border-width: 1px;
+    border-style:solid;
+}
+
