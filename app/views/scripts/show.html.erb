@@ -70,14 +70,16 @@
   </p>
         </div>
 <% end %>
+            </div>
  
-<h3 style="color:white;">Add a comment:</h3>
+<div style="margin-left:2%;">
+<h3>Add a comment:</h3>
 <%= form_for([@script, @script.comments.build]) do |f| %>
-  <p style="color:white;">
+  <p>
     <%= f.label :commenter %><br>
     <%= f.text_field :commenter %>
   </p>
-  <p style="color:white;">
+  <p>
     <%= f.label :body %><br>
     <%= f.text_area :body %>
   </p>
@@ -85,4 +87,5 @@
     <%= f.submit %>
   </p>
 <% end %>
-        </div>
+    </div>
+
