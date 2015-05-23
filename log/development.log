@@ -25259,3 +25259,40 @@ Processing by ScriptsController#show as HTML
   [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."script_id" = ?[0m  [["script_id", 1]]
   Rendered scripts/show.html.erb within layouts/application (8.5ms)
 Completed 200 OK in 158ms (Views: 156.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/scripts/1" for ::1 at 2015-05-23 10:46:03 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ScriptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mScript Load (0.2ms)[0m  SELECT  "scripts".* FROM "scripts" WHERE "scripts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mScene Load (0.3ms)[0m  [1mSELECT "scenes".* FROM "scenes" WHERE "scenes"."script_id" = ?[0m  [["script_id", 1]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."script_id" = ?  [["script_id", 1]]
+  Rendered scripts/show.html.erb within layouts/application (253.1ms)
+Completed 200 OK in 3432ms (Views: 3349.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/scripts/1" for ::1 at 2015-05-23 10:46:07 -0500
+Processing by ScriptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mScript Load (0.2ms)[0m  [1mSELECT  "scripts".* FROM "scripts" WHERE "scripts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mScene Load (0.2ms)[0m  SELECT "scenes".* FROM "scenes" WHERE "scenes"."script_id" = ?  [["script_id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."script_id" = ?[0m  [["script_id", 1]]
+  Rendered scripts/show.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 121ms (Views: 118.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/scripts.self-4112a0f329c6a2647905de9fc81a2044b1910cb47f67e65af4f94bbc71c7ceb3.css?body=1" for ::1 at 2015-05-23 10:46:07 -0500
+
+
+Started GET "/scripts/1" for ::1 at 2015-05-23 10:46:37 -0500
+Processing by ScriptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mScript Load (0.1ms)[0m  SELECT  "scripts".* FROM "scripts" WHERE "scripts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mScene Load (0.2ms)[0m  [1mSELECT "scenes".* FROM "scenes" WHERE "scenes"."script_id" = ?[0m  [["script_id", 1]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."script_id" = ?  [["script_id", 1]]
+  Rendered scripts/show.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 2124ms (Views: 2122.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/scripts.self-2692f28a291aca5ff6f7e24aac2e2515ad286d34cd462a36c8a01374e0857a44.css?body=1" for ::1 at 2015-05-23 10:46:39 -0500
