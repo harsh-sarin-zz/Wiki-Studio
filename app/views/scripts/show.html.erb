@@ -5,7 +5,7 @@
             <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
-            <a class="navbar-brand topnav" href="#">Wiki Studio</a>
+            <a class="navbar-brand topnav" href="#" style="font-family: 'Philosopher',sans-serif; font-size:25px;">Wiki Studio</a>
         </div>
  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
@@ -37,14 +37,14 @@
 	</div>
 </center>
 </div>
-<br></br>
-<br></br>
-<br></br>
-<div>Production Notes</div>
+
+<div class="box"><h3>Production Notes</h3>
 <p><%= @script.notes%></p>
+    </div>
 <br></br>
-<div>Plot</div>
+<div class="box"><h3>Plot</h3>
 <p><%= @script.summary%></p>
+    </div>
 <br></br>
 <ul class="share-buttons">
   <td><a href="https://www.facebook.com/sharer/sharer.php?u=&t=" title="Share on Facebook" target="_blank"><%= image_tag "flat_web_icon_set/color/Facebook.png" %></a></td>
@@ -53,11 +53,12 @@
 </ul>
 <br></br>
 <br></br>
-<br></br>
+
 <!--DIV for comments-->
-<div style="margin-left:20px;">
-<h2>Comments</h2>
+<div style="margin-left: 2%; border-top:5px dashed navy; margin-right: 5%">
+<h2><strong>Comments</strong></h2>
 <% @script.comments.each do |comment| %>
+    <div id="comment">
   <p>
     <strong>Commenter:</strong>
     <%= comment.commenter %>
@@ -67,9 +68,10 @@
     <strong>Comment:</strong>
     <%= comment.body %>
   </p>
+        </div>
 <% end %>
  
-<h2>Add a comment:</h2>
+<h3>Add a comment:</h3>
 <%= form_for([@script, @script.comments.build]) do |f| %>
   <p>
     <%= f.label :commenter %><br>
