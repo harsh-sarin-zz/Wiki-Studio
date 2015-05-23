@@ -55,8 +55,8 @@
 <br></br>
 
 <!--DIV for comments-->
-<div style="margin-left: 2%; border-top:5px dashed navy; margin-right: 5%">
-<h2><strong>Comments</strong></h2>
+<div id="commentbox">
+<h2 style="color:white;">Comments</h2>
 <% @script.comments.each do |comment| %>
     <div id="comment">
   <p>
@@ -71,13 +71,13 @@
         </div>
 <% end %>
  
-<h3>Add a comment:</h3>
+<h3 style="color:white;">Add a comment:</h3>
 <%= form_for([@script, @script.comments.build]) do |f| %>
-  <p>
+  <p style="color:white;">
     <%= f.label :commenter %><br>
     <%= f.text_field :commenter %>
   </p>
-  <p>
+  <p style="color:white;">
     <%= f.label :body %><br>
     <%= f.text_area :body %>
   </p>
@@ -85,4 +85,4 @@
     <%= f.submit %>
   </p>
 <% end %>
-</div>
+        </div>

@@ -154,9 +154,17 @@ iframe {
 }
 
 #comment {
-    border-bottom: 1px dotted navy;
-    border-top: 1px dotted navy;
+    border-bottom: 2px dashed navy;
+    border-top: 2px dashed navy;
     padding: 5px;
     margin-right:5%;
-    margin-bottom:5px;
+    margin-bottom:10px;
+    background:white;
+}
+
+#commentbox {
+    margin-left: 2%;
+    margin-right: 5%;
+    background:black;
+    padding:20px;
 }
