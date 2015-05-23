@@ -25296,3 +25296,58 @@ Completed 200 OK in 2124ms (Views: 2122.3ms | ActiveRecord: 0.4ms)
 
 
 Started GET "/assets/scripts.self-2692f28a291aca5ff6f7e24aac2e2515ad286d34cd462a36c8a01374e0857a44.css?body=1" for ::1 at 2015-05-23 10:46:39 -0500
+
+
+Started GET "/" for ::1 at 2015-05-23 11:29:18 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ScriptsController#index as HTML
+  [1m[35mScript Load (0.2ms)[0m  SELECT "scripts".* FROM "scripts"
+  Rendered scripts/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 418ms (Views: 395.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-05-23 11:29:18 -0500
+Processing by ScriptsController#index as HTML
+  [1m[36mScript Load (0.2ms)[0m  [1mSELECT "scripts".* FROM "scripts"[0m
+  Rendered scripts/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 95ms (Views: 94.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-05-23 11:31:03 -0500
+Processing by ScriptsController#index as HTML
+  [1m[35mScript Load (0.2ms)[0m  SELECT "scripts".* FROM "scripts"
+  Rendered scripts/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 2782ms (Views: 2781.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-2bbbb3822ddf737c9902d58a7d05cb1f60bb66451e9386c58dc562e5dce6683a.css?body=1" for ::1 at 2015-05-23 11:31:06 -0500
+
+
+Started GET "/" for ::1 at 2015-05-23 11:31:49 -0500
+Processing by ScriptsController#index as HTML
+  [1m[36mScript Load (0.2ms)[0m  [1mSELECT "scripts".* FROM "scripts"[0m
+  Rendered scripts/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 1939ms (Views: 1938.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-1b7a920f93ee5bc49d5e0612e55ed0674859c78a19e62bc64be8a1ee93209be6.css?body=1" for ::1 at 2015-05-23 11:31:51 -0500
+
+
+Started GET "/" for ::1 at 2015-05-23 11:32:00 -0500
+Processing by ScriptsController#index as HTML
+  [1m[35mScript Load (0.2ms)[0m  SELECT "scripts".* FROM "scripts"
+  Rendered scripts/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 1860ms (Views: 1858.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-c0ff26e396018fb7d5300819bb188d17be26a4cbd6f154cdafbc619f46312208.css?body=1" for ::1 at 2015-05-23 11:32:01 -0500
+
+
+Started GET "/scripts/1" for ::1 at 2015-05-23 11:32:21 -0500
+Processing by ScriptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mScript Load (0.2ms)[0m  [1mSELECT  "scripts".* FROM "scripts" WHERE "scripts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mScene Load (0.3ms)[0m  SELECT "scenes".* FROM "scenes" WHERE "scenes"."script_id" = ?  [["script_id", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."script_id" = ?[0m  [["script_id", 1]]
+  Rendered scripts/show.html.erb within layouts/application (48.4ms)
+Completed 200 OK in 164ms (Views: 143.6ms | ActiveRecord: 1.2ms)
