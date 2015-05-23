@@ -23477,3 +23477,30 @@ Started GET "/assets/flat_web_icon_set/color/Twitter-49c45399074a6af07b176d55bb8
 
 
 Started GET "/assets/flat_web_icon_set/color/GooglePlus-1e7a8021a029a0b1b97d9df2c059ad4fe80ff8d9db9564c593bdde97df48f5ff.png" for ::1 at 2015-05-22 19:24:07 -0500
+
+
+Started GET "/" for ::1 at 2015-05-22 19:32:41 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ScriptsController#index as HTML
+  [1m[35mScript Load (0.2ms)[0m  SELECT "scripts".* FROM "scripts"
+  Rendered scripts/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 414ms (Views: 389.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/scripts/1" for ::1 at 2015-05-22 19:32:43 -0500
+Processing by ScriptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mScript Load (0.2ms)[0m  [1mSELECT  "scripts".* FROM "scripts" WHERE "scripts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mScene Load (0.3ms)[0m  SELECT "scenes".* FROM "scenes" WHERE "scenes"."script_id" = ?  [["script_id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."script_id" = ?[0m  [["script_id", 1]]
+  Rendered scripts/show.html.erb within layouts/application (49.6ms)
+Completed 200 OK in 273ms (Views: 193.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/scripts/1/scenes/9" for ::1 at 2015-05-22 19:32:48 -0500
+Processing by ScenesController#show as HTML
+  Parameters: {"script_id"=>"1", "id"=>"9"}
+  [1m[35mScene Load (0.3ms)[0m  SELECT  "scenes".* FROM "scenes" WHERE "scenes"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mScript Load (0.1ms)[0m  [1mSELECT  "scripts".* FROM "scripts" WHERE "scripts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered scenes/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 198ms (Views: 193.6ms | ActiveRecord: 0.4ms)

@@ -9,9 +9,7 @@
         </div>
  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a id="modal_trigger" href="#modal" class="btn">Register / Log In</a>
-                </li>
+
             </ul>
         </div>
 </nav>
@@ -28,7 +26,7 @@
     <!--btn btn-default btn-sm-->
     <% @scenes.each do |s| %>
       <% if s.numOfVids == 0 %>
-        <%= link_to "Scene "+s.sceneNumber, script_scene_path(@script, s), class: "scene_buttons_blue_light",
+        <%= link_to "Scene "+s.sceneNumber, script_scene_path(@script, s), class: "scene_buttons_white",
       :onclick=>"window.open(this.href,'popUpWindow', 'height=600,width=600,left=300,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');return false;" %>
       <% else %>
         <%= link_to "Scene "+s.sceneNumber, script_scene_path(@script, s), class: "scene_buttons_blue_dark",
