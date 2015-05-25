@@ -25646,6 +25646,7 @@ Completed 200 OK in 3015ms (Views: 3013.2ms | ActiveRecord: 0.4ms)
 Started GET "/assets/application.self-44a395160470778cf77fb32745603f9a30084d80a33ca7efe77aeef5a0c3e015.css?body=1" for ::1 at 2015-05-25 11:37:04 -0500
 
 
+<<<<<<< Updated upstream
 Started GET "/scripts" for ::1 at 2015-05-25 12:07:03 -0500
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Processing by ScriptsController#index as HTML
@@ -25668,11 +25669,30 @@ Started GET "/assets/application.self-1f67eb40570eb094506601ae99aaad5ff7e74bddb7
 
 
 Started GET "/scripts/1" for ::1 at 2015-05-25 12:07:14 -0500
+=======
+Started GET "/" for ::1 at 2015-05-25 11:56:23 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ScriptsController#index as HTML
+  [1m[35mScript Load (0.2ms)[0m  SELECT "scripts".* FROM "scripts"
+  Rendered scripts/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 428ms (Views: 405.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-05-25 11:56:24 -0500
+Processing by ScriptsController#index as HTML
+  [1m[36mScript Load (0.2ms)[0m  [1mSELECT "scripts".* FROM "scripts"[0m
+  Rendered scripts/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 103ms (Views: 101.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/scripts/1" for ::1 at 2015-05-25 11:56:35 -0500
+>>>>>>> Stashed changes
 Processing by ScriptsController#show as HTML
   Parameters: {"id"=>"1"}
   [1m[35mScript Load (0.2ms)[0m  SELECT  "scripts".* FROM "scripts" WHERE "scripts"."id" = ? LIMIT 1  [["id", 1]]
   [1m[36mScene Load (0.3ms)[0m  [1mSELECT "scenes".* FROM "scenes" WHERE "scenes"."script_id" = ?[0m  [["script_id", 1]]
   [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."script_id" = ?  [["script_id", 1]]
+<<<<<<< Updated upstream
   Rendered scripts/show.html.erb within layouts/application (136.2ms)
 Completed 200 OK in 234ms (Views: 208.8ms | ActiveRecord: 1.2ms)
 
@@ -25896,10 +25916,18 @@ Completed 200 OK in 1061ms (Views: 0.7ms | ActiveRecord: 4.3ms)
 
 
 Started GET "/scripts/1" for ::1 at 2015-05-25 12:15:38 -0500
+=======
+  Rendered scripts/show.html.erb within layouts/application (87.6ms)
+Completed 200 OK in 260ms (Views: 186.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/scripts/1" for ::1 at 2015-05-25 11:56:44 -0500
+>>>>>>> Stashed changes
 Processing by ScriptsController#show as HTML
   Parameters: {"id"=>"1"}
   [1m[36mScript Load (0.1ms)[0m  [1mSELECT  "scripts".* FROM "scripts" WHERE "scripts"."id" = ? LIMIT 1[0m  [["id", 1]]
   [1m[35mScene Load (0.2ms)[0m  SELECT "scenes".* FROM "scenes" WHERE "scenes"."script_id" = ?  [["script_id", 1]]
+<<<<<<< Updated upstream
   [1m[36mClip Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1[0m  [["scene_id", 1]]
   [1m[35mClip Load (0.2ms)[0m  SELECT  "clips".* FROM "clips" WHERE "clips"."scene_id" = ?  ORDER BY votecount DESC LIMIT 1  [["scene_id", 1]]
   [1m[36mClip Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1[0m  [["scene_id", 2]]
@@ -26001,3 +26029,8 @@ Started GET "/assets/flat_web_icon_set/color/Facebook-89c5625aa0ecfeaa47ae9da990
 
 
 Started GET "/assets/flat_web_icon_set/color/GooglePlus-1e7a8021a029a0b1b97d9df2c059ad4fe80ff8d9db9564c593bdde97df48f5ff.png" for ::1 at 2015-05-25 12:15:38 -0500
+=======
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."script_id" = ?[0m  [["script_id", 1]]
+  Rendered scripts/show.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 169ms (Views: 167.0ms | ActiveRecord: 0.4ms)
+>>>>>>> Stashed changes
