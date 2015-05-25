@@ -14,13 +14,14 @@
 ActiveRecord::Schema.define(version: 20150520152308) do
 
   create_table "clips", force: :cascade do |t|
-    t.string   "vid_file_name"
-    t.string   "vid_content_type"
-    t.integer  "vid_file_size"
-    t.datetime "vid_updated_at"
+    t.string   "video_file_name"
+    t.string   "video_content_type"
+    t.integer  "video_file_size"
+    t.datetime "video_updated_at"
     t.integer  "scene_id"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
+    t.integer  "votecount"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
   end
 
   create_table "comments", force: :cascade do |t|
@@ -34,7 +35,7 @@ ActiveRecord::Schema.define(version: 20150520152308) do
   add_index "comments", ["script_id"], name: "index_comments_on_script_id"
 
   create_table "scenes", force: :cascade do |t|
-    t.string   "sceneNumber"
+    t.integer  "sceneNumber"
     t.text     "sceneText"
     t.text     "settingGuideline"
     t.text     "characterGuideline"
@@ -46,7 +47,6 @@ ActiveRecord::Schema.define(version: 20150520152308) do
 
   create_table "scripts", force: :cascade do |t|
     t.string   "scriptname"
-    t.string   "authorid"
     t.string   "genre"
     t.text     "summary"
     t.text     "notes"

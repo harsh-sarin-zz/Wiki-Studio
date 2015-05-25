@@ -17,24 +17,32 @@
 
 <br></br>
 <br></br>
-
 <div class="video">    
-	<h2 style="margin-left: 35px; color: white;">Title of Video</h2>
-        <center>
-	<iframe width="100%" height="480" src="https://www.youtube.com/embed/videoseries?list=PLrEnWoR732-AdR9js0bHtoXVFtHLxD_qJ" frameborder="0" allowfullscreen></iframe>
-            <br></br>
+	<h2 style="margin-left: 35px; color: white;"><%= @script.scriptname %></h2>
+        <center> 
+          <% if @vids.empty? %>
+            <%= video_tag [], :size => "480x480", :controls => true, :autobuffer => true, :poster => 'screenshot.png' %>
+          <% else %>
+            <figure id="video_player">
+              <%= video_tag [@vids.first.video.url], :size => "480x480", :controls => true, :autobuffer => true, id: "myvideo" %>
+              <figcaption>
+                <% @vids.each do |vid| %>
+                <%= link_to image_tag("scene"+vid.scene.sceneNumber.to_s+".png"), vid.video.url %>
+                <% end %>
+              </figcaption>
+            </figure>
+          <% end %>
+        <br></br>
 	<div class="scene-buttons-container">
-    <!--btn btn-default btn-sm-->
     <% @scenes.each do |s| %>
       <% if s.numOfVids == 0 %>
-        <%= link_to "Scene "+s.sceneNumber, script_scene_path(@script, s), class: "scene_buttons_white",
+        <%= link_to "Scene "+s.sceneNumber.to_s, script_scene_path(@script, s), class: "scene_buttons_white",
       :onclick=>"window.open(this.href,'popUpWindow', 'height=600,width=600,left=300,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');return false;" %>
       <% else %>
-        <%= link_to "Scene "+s.sceneNumber, script_scene_path(@script, s), class: "scene_buttons_blue_dark",
+        <%= link_to "Scene "+s.sceneNumber.to_s, script_scene_path(@script, s), class: "scene_buttons_blue_dark",
       :onclick=>"window.open(this.href,'popUpWindow', 'height=600,width=600,left=300,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');return false;" %>
       <% end %>
     <% end %>
-    <!-- method: :get, form_class: "btn btn-default btn-sm"-->
 	</div>
 </center>
 </div>
@@ -88,5 +96,59 @@
     <%= f.submit %>
   </p>
 <% end %>
-    </div>
+ </div>
 
+<!--Code for video playlist. Adapted from http://demosthenes.info/blog/792/Create-A-Simple-HTML5-Video-Playlist-->
+<script type="text/javascript">
+  /*
+  var video_player = document.getElementById("video_player");
+  var video = video_player.getElementsByTagName("video")[0];
+  var currentVid = 0;
+  var link_list = [];
+  var allLnks = video_links.children;
+  var lnkNum = allLnks.length;
+
+  (function() {
+    function playVid(index) {
+      video_links.children[index].classList.add("currentvid");
+      video.src = link_list[index];
+      currentVid = index;
+      video.load();
+      video.play();
+    }
+    for (var i=0; i<lnkNum; i++) {
+      link_list[i] = allLnks[i].href;
+      (function(index){
+        allLnks[i].onclick = function(i){
+          i.preventDefault();
+          for (var i=0; i<lnkNum; i++) {
+            allLnks[i].classList.remove("currentvid");
+          }     
+          playVid(index);
+        }
+      })(i);
+    }
+  });
+
+  video.addEventListener('ended', function () {
+    allLnks[currentVid].classList.remove("currentvid");
+    if ((currentVid + 1) >= lnkNum) { nextVid = 0 } else { nextVid = currentVid+1 }
+      playVid(nextVid);
+  });
+*/
+
+  var links = video_player.getElementsByTagName('a');
+  for (var i=0; i<links.length; i++) {
+    links[i].onclick = handler;
+  }
+
+  function handler(e) {
+    e.preventDefault();
+    videotarget = this.getAttribute("href");
+    video = document.querySelector("#video_player video");
+    source = document.querySelectorAll("#video_player video");
+    source[0].src = videotarget;
+    video.load();
+    video.play();
+  }
+</script>

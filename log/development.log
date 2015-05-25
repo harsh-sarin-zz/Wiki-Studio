@@ -25644,3 +25644,360 @@ Completed 200 OK in 3015ms (Views: 3013.2ms | ActiveRecord: 0.4ms)
 
 
 Started GET "/assets/application.self-44a395160470778cf77fb32745603f9a30084d80a33ca7efe77aeef5a0c3e015.css?body=1" for ::1 at 2015-05-25 11:37:04 -0500
+
+
+Started GET "/scripts" for ::1 at 2015-05-25 12:07:03 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ScriptsController#index as HTML
+  [1m[35mScript Load (0.2ms)[0m  SELECT "scripts".* FROM "scripts"
+  Rendered scripts/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 3603ms (Views: 3579.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/scripts" for ::1 at 2015-05-25 12:07:07 -0500
+Processing by ScriptsController#index as HTML
+  [1m[36mScript Load (0.2ms)[0m  [1mSELECT "scripts".* FROM "scripts"[0m
+  Rendered scripts/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 82ms (Views: 81.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scripts.self-8e2e14c8ea35fd422f503dc29503d8463221d998433eec0c49dbe55a80b10c81.css?body=1" for ::1 at 2015-05-25 12:07:07 -0500
+
+
+Started GET "/assets/application.self-1f67eb40570eb094506601ae99aaad5ff7e74bddb72d1d8aed796f120259b769.css?body=1" for ::1 at 2015-05-25 12:07:07 -0500
+
+
+Started GET "/scripts/1" for ::1 at 2015-05-25 12:07:14 -0500
+Processing by ScriptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mScript Load (0.2ms)[0m  SELECT  "scripts".* FROM "scripts" WHERE "scripts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mScene Load (0.3ms)[0m  [1mSELECT "scenes".* FROM "scenes" WHERE "scenes"."script_id" = ?[0m  [["script_id", 1]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."script_id" = ?  [["script_id", 1]]
+  Rendered scripts/show.html.erb within layouts/application (136.2ms)
+Completed 200 OK in 234ms (Views: 208.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/?class=navbar-brand+topnav" for ::1 at 2015-05-25 12:07:31 -0500
+Processing by ScriptsController#index as HTML
+  Parameters: {"class"=>"navbar-brand topnav"}
+  [1m[36mScript Load (0.2ms)[0m  [1mSELECT "scripts".* FROM "scripts"[0m
+  Rendered scripts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 79ms (Views: 78.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-05-25 12:14:38 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ScriptsController#index as HTML
+  [1m[35mScript Load (0.2ms)[0m  SELECT "scripts".* FROM "scripts"
+  Rendered scripts/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 3407ms (Views: 3382.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-05-25 12:14:41 -0500
+Processing by ScriptsController#index as HTML
+  [1m[36mScript Load (0.2ms)[0m  [1mSELECT "scripts".* FROM "scripts"[0m
+  Rendered scripts/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 99ms (Views: 97.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scripts.self-05fbbb83c7597f07a30bb921721a4774fccfd7993b1bdb5ad91f34b2d7e3d5c0.css?body=1" for ::1 at 2015-05-25 12:14:42 -0500
+
+
+Started GET "/scripts/1" for ::1 at 2015-05-25 12:14:44 -0500
+Processing by ScriptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mScript Load (0.2ms)[0m  SELECT  "scripts".* FROM "scripts" WHERE "scripts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mScene Load (1.8ms)[0m  [1mSELECT "scenes".* FROM "scenes" WHERE "scenes"."script_id" = ?[0m  [["script_id", 1]]
+  [1m[35mClip Exists (0.5ms)[0m  SELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1  [["scene_id", 1]]
+  [1m[36mClip Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1[0m  [["scene_id", 2]]
+  [1m[35mClip Exists (0.1ms)[0m  SELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1  [["scene_id", 3]]
+  [1m[36mClip Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1[0m  [["scene_id", 4]]
+  [1m[35mClip Exists (0.1ms)[0m  SELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1  [["scene_id", 5]]
+  [1m[36mClip Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1[0m  [["scene_id", 6]]
+  [1m[35mClip Exists (0.1ms)[0m  SELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1  [["scene_id", 7]]
+  [1m[36mClip Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1[0m  [["scene_id", 8]]
+  [1m[35mClip Exists (0.1ms)[0m  SELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1  [["scene_id", 9]]
+  [1m[36mComment Load (0.5ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."script_id" = ?[0m  [["script_id", 1]]
+  Rendered scripts/show.html.erb within layouts/application (47.1ms)
+Completed 200 OK in 185ms (Views: 124.0ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/scripts/1/scenes/2" for ::1 at 2015-05-25 12:14:47 -0500
+Processing by ScenesController#show as HTML
+  Parameters: {"script_id"=>"1", "id"=>"2"}
+  [1m[35mScene Load (0.3ms)[0m  SELECT  "scenes".* FROM "scenes" WHERE "scenes"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mScript Load (0.1ms)[0m  [1mSELECT  "scripts".* FROM "scripts" WHERE "scripts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered scenes/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 118ms (Views: 113.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/scripts/1/scenes/2/clips/new" for ::1 at 2015-05-25 12:14:48 -0500
+Processing by ClipsController#new as HTML
+  Parameters: {"script_id"=>"1", "scene_id"=>"2"}
+  Rendered clips/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 184ms (Views: 176.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/scripts/1/scenes/2/clips" for ::1 at 2015-05-25 12:14:54 -0500
+Processing by ClipsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swDPTAe8IoYG5vknbeNcquTJAwJvxdQDX18GTfVBTDx6TN+TIPQmsxSyN3BTRknTx668oUT4Nsqimy9HO5aAvg==", "clip"=>{"video"=>#<ActionDispatch::Http::UploadedFile:0x007ffdb54d88b0 @tempfile=#<Tempfile:/var/folders/t3/p8ww9y4s5jj9_yst8vkdnb8m0000gn/T/RackMultipart20150525-816-14smpz0.mp4>, @original_filename="2.mp4", @content_type="video/mp4", @headers="Content-Disposition: form-data; name=\"clip[video]\"; filename=\"2.mp4\"\r\nContent-Type: video/mp4\r\n">}, "commit"=>"Submit", "script_id"=>"1", "scene_id"=>"2"}
+  [1m[35mScript Load (0.1ms)[0m  SELECT  "scripts".* FROM "scripts" WHERE "scripts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mScene Load (0.4ms)[0m  [1mSELECT  "scenes".* FROM "scenes" WHERE "scenes"."script_id" = ? AND "scenes"."id" = ? LIMIT 1[0m  [["script_id", 1], ["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+Command :: file -b --mime '/var/folders/t3/p8ww9y4s5jj9_yst8vkdnb8m0000gn/T/c81e728d9d4c2f636f067f89cc14862c20150525-816-15ihe28.mp4'
+Command :: file -b --mime '/var/folders/t3/p8ww9y4s5jj9_yst8vkdnb8m0000gn/T/c81e728d9d4c2f636f067f89cc14862c20150525-816-11gjmn5.mp4'
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "clips" ("video_file_name", "video_content_type", "video_file_size", "video_updated_at", "scene_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["video_file_name", "2.mp4"], ["video_content_type", "video/mp4"], ["video_file_size", 10537242], ["video_updated_at", "2015-05-25 17:14:54.908736"], ["scene_id", 2], ["created_at", "2015-05-25 17:14:54.947080"], ["updated_at", "2015-05-25 17:14:54.947080"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "scenes" SET "numOfVids" = ?, "updated_at" = ? WHERE "scenes"."id" = ?  [["numOfVids", 1], ["updated_at", "2015-05-25 17:14:54.968619"], ["id", 2]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  Rendered text template (0.0ms)
+Completed 200 OK in 107ms (Views: 1.9ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/scripts/1" for ::1 at 2015-05-25 12:14:57 -0500
+Processing by ScriptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mScript Load (0.1ms)[0m  SELECT  "scripts".* FROM "scripts" WHERE "scripts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mScene Load (0.5ms)[0m  [1mSELECT "scenes".* FROM "scenes" WHERE "scenes"."script_id" = ?[0m  [["script_id", 1]]
+  [1m[35mClip Exists (0.1ms)[0m  SELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1  [["scene_id", 1]]
+  [1m[36mClip Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1[0m  [["scene_id", 2]]
+  [1m[35mClip Load (0.4ms)[0m  SELECT  "clips".* FROM "clips" WHERE "clips"."scene_id" = ?  ORDER BY votecount DESC LIMIT 1  [["scene_id", 2]]
+  [1m[36mClip Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1[0m  [["scene_id", 3]]
+  [1m[35mClip Exists (0.1ms)[0m  SELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1  [["scene_id", 4]]
+  [1m[36mClip Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1[0m  [["scene_id", 5]]
+  [1m[35mClip Exists (0.1ms)[0m  SELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1  [["scene_id", 6]]
+  [1m[36mClip Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1[0m  [["scene_id", 7]]
+  [1m[35mClip Exists (0.1ms)[0m  SELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1  [["scene_id", 8]]
+  [1m[36mClip Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1[0m  [["scene_id", 9]]
+  [1m[35mComment Load (0.5ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."script_id" = ?  [["script_id", 1]]
+  Rendered scripts/show.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 144ms (Views: 126.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/comments.self-5ba76b44171ee641cd4f01f01116845777a2321d7920e0a27b5e5a52edc5432b.css?body=1" for ::1 at 2015-05-25 12:14:57 -0500
+
+
+Started GET "/assets/clips.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-25 12:14:57 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-25 12:14:57 -0500
+
+
+Started GET "/assets/scripts.self-05fbbb83c7597f07a30bb921721a4774fccfd7993b1bdb5ad91f34b2d7e3d5c0.css?body=1" for ::1 at 2015-05-25 12:14:57 -0500
+
+
+Started GET "/assets/scenes.self-31a18979bc40c2de85f1a9613e3505ca68cd0475425f3962e8354d31a0b4244c.css?body=1" for ::1 at 2015-05-25 12:14:57 -0500
+
+
+Started GET "/assets/application.self-1f67eb40570eb094506601ae99aaad5ff7e74bddb72d1d8aed796f120259b769.css?body=1" for ::1 at 2015-05-25 12:14:57 -0500
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2015-05-25 12:14:57 -0500
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2015-05-25 12:14:57 -0500
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2015-05-25 12:14:57 -0500
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2015-05-25 12:14:57 -0500
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2015-05-25 12:14:57 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2015-05-25 12:14:57 -0500
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2015-05-25 12:14:57 -0500
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2015-05-25 12:14:57 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2015-05-25 12:14:57 -0500
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2015-05-25 12:14:57 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2015-05-25 12:14:57 -0500
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2015-05-25 12:14:57 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-05-25 12:14:57 -0500
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-25 12:14:57 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-25 12:14:57 -0500
+
+
+Started GET "/assets/clips.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-25 12:14:57 -0500
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-25 12:14:57 -0500
+
+
+Started GET "/assets/scenes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-25 12:14:57 -0500
+
+
+Started GET "/assets/scripts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-25 12:14:57 -0500
+
+
+Started GET "/assets/application.self-b33329976d44262266e0073bfcac02aa87cb5773cf106eee2014909e7a9092aa.js?body=1" for ::1 at 2015-05-25 12:14:57 -0500
+
+
+Started GET "/assets/flat_web_icon_set/color/Twitter-49c45399074a6af07b176d55bb85b3de42b2c2889bf9efa37310b4e71cf14f43.png" for ::1 at 2015-05-25 12:14:57 -0500
+
+
+Started GET "/assets/flat_web_icon_set/color/GooglePlus-1e7a8021a029a0b1b97d9df2c059ad4fe80ff8d9db9564c593bdde97df48f5ff.png" for ::1 at 2015-05-25 12:14:57 -0500
+
+
+Started GET "/assets/flat_web_icon_set/color/Facebook-89c5625aa0ecfeaa47ae9da990cda5ab80fe8088ab1cd55ee7394e870de5eafa.png" for ::1 at 2015-05-25 12:14:57 -0500
+
+
+Started GET "/scripts/1/scenes/1" for ::1 at 2015-05-25 12:15:00 -0500
+Processing by ScenesController#show as HTML
+  Parameters: {"script_id"=>"1", "id"=>"1"}
+  [1m[36mScene Load (0.2ms)[0m  [1mSELECT  "scenes".* FROM "scenes" WHERE "scenes"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mScript Load (0.1ms)[0m  SELECT  "scripts".* FROM "scripts" WHERE "scripts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered scenes/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 135ms (Views: 132.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/scripts/1/scenes/1/clips/new" for ::1 at 2015-05-25 12:15:02 -0500
+Processing by ClipsController#new as HTML
+  Parameters: {"script_id"=>"1", "scene_id"=>"1"}
+  Rendered clips/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 101ms (Views: 99.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/scripts/1/scenes/1/clips" for ::1 at 2015-05-25 12:15:09 -0500
+Processing by ClipsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jR7lqtHdLpzGeeMS9110Xj/0ilHnYW7k0Fi/tFwplhZEUvV19pUqqdQtLUXJ+GEnHJM18sxcjC0tnJa+kv5alA==", "clip"=>{"video"=>#<ActionDispatch::Http::UploadedFile:0x007ffdb31aa6e0 @tempfile=#<Tempfile:/var/folders/t3/p8ww9y4s5jj9_yst8vkdnb8m0000gn/T/RackMultipart20150525-816-lwy5y8.mp4>, @original_filename="1.mp4", @content_type="video/mp4", @headers="Content-Disposition: form-data; name=\"clip[video]\"; filename=\"1.mp4\"\r\nContent-Type: video/mp4\r\n">}, "commit"=>"Submit", "script_id"=>"1", "scene_id"=>"1"}
+  [1m[36mScript Load (0.1ms)[0m  [1mSELECT  "scripts".* FROM "scripts" WHERE "scripts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mScene Load (0.1ms)[0m  SELECT  "scenes".* FROM "scenes" WHERE "scenes"."script_id" = ? AND "scenes"."id" = ? LIMIT 1  [["script_id", 1], ["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/var/folders/t3/p8ww9y4s5jj9_yst8vkdnb8m0000gn/T/c4ca4238a0b923820dcc509a6f75849b20150525-816-xzy70g.mp4'
+Command :: file -b --mime '/var/folders/t3/p8ww9y4s5jj9_yst8vkdnb8m0000gn/T/c4ca4238a0b923820dcc509a6f75849b20150525-816-1wxyz0v.mp4'
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "clips" ("video_file_name", "video_content_type", "video_file_size", "video_updated_at", "scene_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["video_file_name", "1.mp4"], ["video_content_type", "video/mp4"], ["video_file_size", 136790709], ["video_updated_at", "2015-05-25 17:15:10.320624"], ["scene_id", 1], ["created_at", "2015-05-25 17:15:10.763326"], ["updated_at", "2015-05-25 17:15:10.763326"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "scenes" SET "numOfVids" = ?, "updated_at" = ? WHERE "scenes"."id" = ?[0m  [["numOfVids", 1], ["updated_at", "2015-05-25 17:15:10.786339"], ["id", 1]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  Rendered text template (0.0ms)
+Completed 200 OK in 1061ms (Views: 0.7ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/scripts/1" for ::1 at 2015-05-25 12:15:38 -0500
+Processing by ScriptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mScript Load (0.1ms)[0m  [1mSELECT  "scripts".* FROM "scripts" WHERE "scripts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mScene Load (0.2ms)[0m  SELECT "scenes".* FROM "scenes" WHERE "scenes"."script_id" = ?  [["script_id", 1]]
+  [1m[36mClip Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1[0m  [["scene_id", 1]]
+  [1m[35mClip Load (0.2ms)[0m  SELECT  "clips".* FROM "clips" WHERE "clips"."scene_id" = ?  ORDER BY votecount DESC LIMIT 1  [["scene_id", 1]]
+  [1m[36mClip Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1[0m  [["scene_id", 2]]
+  [1m[35mClip Load (0.2ms)[0m  SELECT  "clips".* FROM "clips" WHERE "clips"."scene_id" = ?  ORDER BY votecount DESC LIMIT 1  [["scene_id", 2]]
+  [1m[36mClip Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1[0m  [["scene_id", 3]]
+  [1m[35mClip Exists (0.1ms)[0m  SELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1  [["scene_id", 4]]
+  [1m[36mClip Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1[0m  [["scene_id", 5]]
+  [1m[35mClip Exists (0.1ms)[0m  SELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1  [["scene_id", 6]]
+  [1m[36mClip Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1[0m  [["scene_id", 7]]
+  [1m[35mClip Exists (0.1ms)[0m  SELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1  [["scene_id", 8]]
+  [1m[36mClip Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1[0m  [["scene_id", 9]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."script_id" = ?  [["script_id", 1]]
+  Rendered scripts/show.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 112ms (Views: 97.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/clips.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-25 12:15:38 -0500
+
+
+Started GET "/assets/comments.self-5ba76b44171ee641cd4f01f01116845777a2321d7920e0a27b5e5a52edc5432b.css?body=1" for ::1 at 2015-05-25 12:15:38 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-25 12:15:38 -0500
+
+
+Started GET "/assets/scenes.self-31a18979bc40c2de85f1a9613e3505ca68cd0475425f3962e8354d31a0b4244c.css?body=1" for ::1 at 2015-05-25 12:15:38 -0500
+
+
+Started GET "/assets/scripts.self-05fbbb83c7597f07a30bb921721a4774fccfd7993b1bdb5ad91f34b2d7e3d5c0.css?body=1" for ::1 at 2015-05-25 12:15:38 -0500
+
+
+Started GET "/assets/application.self-1f67eb40570eb094506601ae99aaad5ff7e74bddb72d1d8aed796f120259b769.css?body=1" for ::1 at 2015-05-25 12:15:38 -0500
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2015-05-25 12:15:38 -0500
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2015-05-25 12:15:38 -0500
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2015-05-25 12:15:38 -0500
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2015-05-25 12:15:38 -0500
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2015-05-25 12:15:38 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2015-05-25 12:15:38 -0500
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2015-05-25 12:15:38 -0500
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2015-05-25 12:15:38 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2015-05-25 12:15:38 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2015-05-25 12:15:38 -0500
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2015-05-25 12:15:38 -0500
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2015-05-25 12:15:38 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-05-25 12:15:38 -0500
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-25 12:15:38 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-25 12:15:38 -0500
+
+
+Started GET "/assets/clips.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-25 12:15:38 -0500
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-25 12:15:38 -0500
+
+
+Started GET "/assets/scenes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-25 12:15:38 -0500
+
+
+Started GET "/assets/application.self-b33329976d44262266e0073bfcac02aa87cb5773cf106eee2014909e7a9092aa.js?body=1" for ::1 at 2015-05-25 12:15:38 -0500
+
+
+Started GET "/assets/scripts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-25 12:15:38 -0500
+
+
+Started GET "/assets/flat_web_icon_set/color/Twitter-49c45399074a6af07b176d55bb85b3de42b2c2889bf9efa37310b4e71cf14f43.png" for ::1 at 2015-05-25 12:15:38 -0500
+
+
+Started GET "/assets/flat_web_icon_set/color/Facebook-89c5625aa0ecfeaa47ae9da990cda5ab80fe8088ab1cd55ee7394e870de5eafa.png" for ::1 at 2015-05-25 12:15:38 -0500
+
+
+Started GET "/assets/flat_web_icon_set/color/GooglePlus-1e7a8021a029a0b1b97d9df2c059ad4fe80ff8d9db9564c593bdde97df48f5ff.png" for ::1 at 2015-05-25 12:15:38 -0500

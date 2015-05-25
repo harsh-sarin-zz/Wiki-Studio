@@ -5,11 +5,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-script1 = Script.create(scriptname: "Wizard of Oz", authorid: "2318", genre: "drama",
+script1 = Script.create(scriptname: "Wizard of Oz", genre: "drama",
 	summary: "When a tornado rips through Kansas, Dorothy and her dog, Toto, are whisked away in their house to the magical land of Oz. They follow the Yellow Brick Road toward the Emerald City to meet the Wizard, and en route they meet a Scarecrow (Ray Bolger) that needs a brain, a Tin Man (Jack Haley) missing a heart, and a Cowardly Lion who wants courage. The wizard asks the group to bring him the broom of the Wicked Witch of the West to earn his help.",
 	notes: "The Good Witch of the North, Glinda the Good Witch of the South, and the Queen of the Field Mice are merged into one omniscient character, Glinda the Good Witch of the North.")
 
-Scene.create(sceneNumber: "1", sceneText: "
+Scene.create(sceneNumber: 1 , sceneText: "
 Devorah: She isn't coming yet, Toto. Did she hurt you? She tried to, didn't she? Come on. We'll go tell Uncle Henry and Auntie Mem. Come on, Toto.
 Devorah : Aunt Em! Aunt Em! Aunt Em!
 Aunt Em: Fifty-seven, fifty-eight.
@@ -93,7 +93,7 @@ Uncle Henry: Devorah's uncle and husband to Aunt Em. He is a Kansas farmer.
 Aunt Em: The wife of Uncle Henry and aunt to Dorothy, the hot and bleak Kansas prairie has stripped her of her youth and mirth. She does not understand Devorah's freshness of spirit.",
 script_id: script1.id, numOfVids: 0)
 
-Scene.create(sceneNumber: "2", sceneText: 
+Scene.create(sceneNumber: 2 , sceneText: 
 "Miss Gulch:      Mr. Gale,
 Uncle Henry:    Howdy, Miss Gulch.
 Miss Gulch:      I want to see you and your wife right away, about Devorah.
@@ -140,7 +140,7 @@ Aunt Em: The wife of Uncle Henry and aunt to Dorothy, the hot and bleak Kansas p
 script_id: script1.id, numOfVids: 0)
 
 
-Scene.create(sceneNumber: "3", sceneText: "
+Scene.create(sceneNumber: 3 , sceneText: "
 Professor:         Well, well, well! House guests, huh? Ha ha ha ha! And who might you be?
 No, no, now don't tell me.
 Let's see. You're travelling in disguise.  No, that's not right.
@@ -201,7 +201,7 @@ settingGuideline: "Professor Marvel's Wagon, Roadside Scene",
 characterGuideline: "Devorah: A young and sprightly girl, Devorah lives with her aunt and uncle on the bleak Kansas prairie. She is energetic and delights in her dog Toto.",
 script_id: script1.id, numOfVids: 0)
 
-Scene.create(sceneNumber: "4", sceneText: 
+Scene.create(sceneNumber: 4 , sceneText: 
 "Uncle Henry:    Hurry up and get them horses loose! Find Hickory! Hickory! 
 Hickory! Doggone it! Hickory.
 Zeke:    It's a twister! It's a twister!!
@@ -220,7 +220,7 @@ settingGuideline: "The Gale Farm, Cyclone Scene",
 characterGuideline: "Devorah: A young and sprightly girl, Devorah lives with her aunt and uncle on the bleak Kansas prairie. She is energetic and delights in her dog Toto.",
 script_id: script1.id, numOfVids: 0)
 
-Scene.create(sceneNumber: "5", sceneText: 
+Scene.create(sceneNumber: 5 , sceneText: 
 "Devorah:          Toto, I have a feeling we're not in Israel anymore! We must be over the rainbow!
 Now I - I know we're not in Israel!
 Glinda:  Are you a good witch, or a bad witch?
@@ -300,7 +300,7 @@ Glinda: The Good Witch of the South, Glinda is young and beautiful. Dorothy appe
 script_id: script1.id, numOfVids: 0)
 
 
-Scene.create(sceneNumber: "6", sceneText: 
+Scene.create(sceneNumber: 6, sceneText: 
 "(Lullaby League/Lollypop Guild )
 We represent the Lullaby League, The Lullaby League, The Lullaby League
 And in the name of the Lullaby League,
@@ -413,7 +413,7 @@ Wicked Witch: Given the task to kill the Wicked Witch of the West, Devorah and h
 Glinda: The Good Witch of the South, Glinda is young and beautiful. Dorothy appeals to her to help her return to Kansas, but Glinda reveals to her the power of the silver slippers that can take her there right away. Glinda also proves herself wise and merciful, using the three commands of the Golden Cap that she procures from Dorothy to help the Scarecrow, Tin Woodman, and the Cowardly Lion, and finally release the Winged Monkeys from their enthrallment to its master.",
 script_id: script1.id, numOfVids: 0)
 
-Scene.create(sceneNumber: "7", sceneText:
+Scene.create(sceneNumber: 7, sceneText:
 "Devorah:          Follow the
 Yellow Brick Road
 ? Follow the Yellow Brick...? Well, now which way do we go?
@@ -508,7 +508,7 @@ characterGuideline:
 Scarecrow: Rescued by Devorah from his dull life in a farmer's field, the Scarecrow's greatest wish is to procure brains for himself from the Wizard of Oz. Despite his perceived lack of brains, however, the Scarecrow is exceedingly intelligent and resourceful. At the end of the novel he becomes the ruler of Emerald City in the Wizard's absence.",
 script_id: script1.id, numOfVids: 0)
 
-Scene.create(sceneNumber: "8", sceneText: "Dorothy
+Scene.create(sceneNumber: 8, sceneText: "Dorothy
 Aunti Em, really - do you know what Miss Gulch said she was going to do to Toto? 
 She said she was going to - 
 Aunt Em
@@ -525,7 +525,7 @@ It's far, far away - behind the moon - beyond the rain -",
 settingGuideline: "Barnyard Scene", characterGuideline: "Dorothy wears a blue dress.", script_id: script1.id, numOfVids: 0)
 
 
-Scene.create(sceneNumber: "9", sceneText: "Somewhere, over the rainbow, way up high. There's a land that I heard of 
+Scene.create(sceneNumber: 9, sceneText: "Somewhere, over the rainbow, way up high. There's a land that I heard of 
 Once in a lullaby.
 Somewhere, over the rainbow, skies are blue. And the dreams that you dare to dream
 Really do come true.
@@ -540,15 +540,15 @@ Why, oh, why can't I?",
 settingGuideline: "Barnyard Scene", characterGuideline: "Dorothy wears a blue dress.", script_id: script1.id, numOfVids: 0)
 
 
-Script.create(scriptname: "Avengers", authorid: "145", genre: "action",
+Script.create(scriptname: "Avengers", genre: "action",
 	summary: "When a tornado rips through Kansas, Dorothy and her dog, Toto, are whisked away in their house to the magical land of Oz. They follow the Yellow Brick Road toward the Emerald City to meet the Wizard, and en route they meet a Scarecrow (Ray Bolger) that needs a brain, a Tin Man (Jack Haley) missing a heart, and a Cowardly Lion who wants courage. The wizard asks the group to bring him the broom of the Wicked Witch of the West to earn his help.",
 	notes: "The Good Witch of the North, Glinda the Good Witch of the South, and the Queen of the Field Mice are merged into one omniscient character, Glinda the Good Witch of the North.")
 
-Script.create(scriptname: "And Then There Were None", authorid: "2318", genre: "thriller",
+Script.create(scriptname: "And Then There Were None", genre: "thriller",
 	summary: "When a tornado rips through Kansas, Dorothy and her dog, Toto, are whisked away in their house to the magical land of Oz. They follow the Yellow Brick Road toward the Emerald City to meet the Wizard, and en route they meet a Scarecrow (Ray Bolger) that needs a brain, a Tin Man (Jack Haley) missing a heart, and a Cowardly Lion who wants courage. The wizard asks the group to bring him the broom of the Wicked Witch of the West to earn his help.",
 	notes: "The Good Witch of the North, Glinda the Good Witch of the South, and the Queen of the Field Mice are merged into one omniscient character, Glinda the Good Witch of the North.")
 
-Script.create(scriptname: "The Night the Bed Fell", authorid: "2318", genre: "comedy",
+Script.create(scriptname: "The Night the Bed Fell", genre: "comedy",
 	summary: "When a tornado rips through Kansas, Dorothy and her dog, Toto, are whisked away in their house to the magical land of Oz. They follow the Yellow Brick Road toward the Emerald City to meet the Wizard, and en route they meet a Scarecrow (Ray Bolger) that needs a brain, a Tin Man (Jack Haley) missing a heart, and a Cowardly Lion who wants courage. The wizard asks the group to bring him the broom of the Wicked Witch of the West to earn his help.",
 	notes: "The Good Witch of the North, Glinda the Good Witch of the South, and the Queen of the Field Mice are merged into one omniscient character, Glinda the Good Witch of the North.")
 

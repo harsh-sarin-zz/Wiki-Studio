@@ -6,9 +6,16 @@ class ScriptsController < ApplicationController
 	def show
 		@script = Script.find(params[:id])
 		@scenes = @script.scenes
-	end
-
-	def new
-		@script = Script.new
+		@vids = []
+		@scenes.each do |scene|
+			@clips = scene.clips
+			if !(@clips.empty?) then
+				@vids.push @clips.order("votecount DESC").first
+			end
+			#if !(@clips.empty?) then
+			#	@clip = @clips.first
+			#	break
+			#end
+		end
 	end
 end

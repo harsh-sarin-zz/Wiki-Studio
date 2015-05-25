@@ -168,3 +168,14 @@ iframe {
     background:black;
     padding:20px;
 }
+
+#video_player { display: table; line-height: 0; font-size: 0; background: #000; }
+
+#video_player video, #video_player figcaption { display: table-cell; vertical-align: top; }
+
+#video_player figcaption { width: 25%; }
+
+#video_player figcaption a { display: block; opacity: .5;
+transition: 1s opacity; }
+#video_player figcaption a img, figure video { width: 100%; height: auto; }
+#video_player figcaption a:hover { opacity: 1; }

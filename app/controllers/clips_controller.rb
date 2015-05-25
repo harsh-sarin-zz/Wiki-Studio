@@ -19,8 +19,16 @@ class ClipsController < ApplicationController
 		end
 	end
 
+	def update
+		@script = Script.find(params[:script_id])
+		@scene = @script.scenes.find(params[:scene_id])
+		@clip = @scene.clips.find(params[:id])
+		@clip.increment(:votecount)
+		redirect_to :back
+	end
+	
 	private
 		def clip_params
-			params.require(:clip).permit(:vid)
+			params.require(:clip).permit(:video)
 		end
 end
