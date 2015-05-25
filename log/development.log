@@ -26034,3 +26034,56 @@ Started GET "/assets/flat_web_icon_set/color/GooglePlus-1e7a8021a029a0b1b97d9df2
   Rendered scripts/show.html.erb within layouts/application (12.3ms)
 Completed 200 OK in 169ms (Views: 167.0ms | ActiveRecord: 0.4ms)
 >>>>>>> Stashed changes
+
+
+Started GET "/" for ::1 at 2015-05-25 13:53:02 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ScriptsController#index as HTML
+  [1m[35mScript Load (0.2ms)[0m  SELECT "scripts".* FROM "scripts"
+  Rendered scripts/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 3376ms (Views: 3353.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-05-25 13:53:05 -0500
+Processing by ScriptsController#index as HTML
+  [1m[36mScript Load (0.2ms)[0m  [1mSELECT "scripts".* FROM "scripts"[0m
+  Rendered scripts/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 105ms (Views: 104.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scripts.self-f12d75e2a43746fb4635de2973e7c845d79d69876a338f2d7541776c043be466.css?body=1" for ::1 at 2015-05-25 13:53:05 -0500
+
+
+Started GET "/scripts/1" for ::1 at 2015-05-25 13:53:23 -0500
+Processing by ScriptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mScript Load (0.2ms)[0m  SELECT  "scripts".* FROM "scripts" WHERE "scripts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mScene Load (0.3ms)[0m  [1mSELECT "scenes".* FROM "scenes" WHERE "scenes"."script_id" = ?[0m  [["script_id", 1]]
+  [1m[35mClip Exists (0.2ms)[0m  SELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1  [["scene_id", 1]]
+  [1m[36mClip Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1[0m  [["scene_id", 2]]
+  [1m[35mClip Exists (0.1ms)[0m  SELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1  [["scene_id", 3]]
+  [1m[36mClip Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1[0m  [["scene_id", 4]]
+  [1m[35mClip Exists (0.0ms)[0m  SELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1  [["scene_id", 5]]
+  [1m[36mClip Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1[0m  [["scene_id", 6]]
+  [1m[35mClip Exists (0.1ms)[0m  SELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1  [["scene_id", 7]]
+  [1m[36mClip Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1[0m  [["scene_id", 8]]
+  [1m[35mClip Exists (0.1ms)[0m  SELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1  [["scene_id", 9]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."script_id" = ?[0m  [["script_id", 1]]
+  Rendered scripts/show.html.erb within layouts/application (56.5ms)
+Completed 200 OK in 223ms (Views: 161.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/scripts/1/scenes/4" for ::1 at 2015-05-25 13:53:29 -0500
+Processing by ScenesController#show as HTML
+  Parameters: {"script_id"=>"1", "id"=>"4"}
+  [1m[35mScene Load (0.2ms)[0m  SELECT  "scenes".* FROM "scenes" WHERE "scenes"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mScript Load (0.1ms)[0m  [1mSELECT  "scripts".* FROM "scripts" WHERE "scripts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered scenes/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 200ms (Views: 196.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/scripts/1/scenes/4/clips/new" for ::1 at 2015-05-25 13:53:33 -0500
+Processing by ClipsController#new as HTML
+  Parameters: {"script_id"=>"1", "scene_id"=>"4"}
+  Rendered clips/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 107ms (Views: 99.7ms | ActiveRecord: 0.2ms)
