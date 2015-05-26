@@ -17,17 +17,19 @@
 
 <br></br>
 <br></br>
-<div class="video">    
+<div class="videoDiv">    
 	<h2 style="margin-left: 35px; color: white;"><%= @script.scriptname %></h2>
-        <center> 
+       <!-- <center> -->
           <% if @vids.empty? %>
             <%= video_tag [], :size => "480x480", :controls => true, :autobuffer => true, :poster => 'screenshot.png' %>
           <% else %>
             <figure id="video_player">
-              <%= video_tag [@vids.first.video.url], :size => "480x480", :controls => true, :autobuffer => true, id: "myvideo" %>
+              <div id="video_container">
+                <%= video_tag [@vids.first.video.url], :controls => true, :autobuffer => true %>
+              </div>
               <figcaption>
                 <% @vids.each do |vid| %>
-                <%= link_to image_tag("scene"+vid.scene.sceneNumber.to_s+".png"), vid.video.url %>
+                  <%= link_to image_tag("scene"+vid.scene.sceneNumber.to_s+".png"), vid.video.url %>
                 <% end %>
               </figcaption>
             </figure>
@@ -100,43 +102,44 @@
 
 <!--Code for video playlist. Adapted from http://demosthenes.info/blog/792/Create-A-Simple-HTML5-Video-Playlist-->
 <script type="text/javascript">
-  /*
+  
   var video_player = document.getElementById("video_player");
   var video = video_player.getElementsByTagName("video")[0];
+  var video_links = video_player.getElementsByTagName("figcaption")[0];
   var currentVid = 0;
   var link_list = [];
   var allLnks = video_links.children;
   var lnkNum = allLnks.length;
+  video_links.children[0].classList.add("currentvid");
 
-  (function() {
-    function playVid(index) {
+  function playVid(index) {
       video_links.children[index].classList.add("currentvid");
       video.src = link_list[index];
       currentVid = index;
       video.load();
       video.play();
-    }
-    for (var i=0; i<lnkNum; i++) {
-      link_list[i] = allLnks[i].href;
-      (function(index){
-        allLnks[i].onclick = function(i){
-          i.preventDefault();
-          for (var i=0; i<lnkNum; i++) {
-            allLnks[i].classList.remove("currentvid");
-          }     
-          playVid(index);
-        }
-      })(i);
-    }
-  });
+  }
+  
+  for (var i=0; i<lnkNum; i++) {
+    link_list[i] = allLnks[i].href;
+    (function(index){
+      allLnks[i].onclick = function(i){
+        i.preventDefault();
+        for (var i=0; i<lnkNum; i++) {
+          allLnks[i].classList.remove("currentvid");
+        }     
+        playVid(index);
+      }
+    })(i);
+  }
 
   video.addEventListener('ended', function () {
     allLnks[currentVid].classList.remove("currentvid");
     if ((currentVid + 1) >= lnkNum) { nextVid = 0 } else { nextVid = currentVid+1 }
       playVid(nextVid);
   });
-*/
 
+  /*
   var links = video_player.getElementsByTagName('a');
   for (var i=0; i<links.length; i++) {
     links[i].onclick = handler;
@@ -150,5 +153,5 @@
     source[0].src = videotarget;
     video.load();
     video.play();
-  }
+  }*/
 </script>

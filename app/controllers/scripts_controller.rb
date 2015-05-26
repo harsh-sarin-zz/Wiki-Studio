@@ -1,5 +1,6 @@
 class ScriptsController < ApplicationController
 	def index
+		@homepage = true
 		@scriptList = Script.all
 	end
 
