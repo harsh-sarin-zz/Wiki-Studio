@@ -34133,3 +34133,18 @@ Processing by ClipsController#new as HTML
   Rendered clips/new.html.erb within layouts/application (2.7ms)
 Completed 200 OK in 107ms (Views: 99.7ms | ActiveRecord: 0.2ms)
 >>>>>>> 4b7479fe7b23bf9b2510e6a864970dc85e668217
+
+
+Started GET "/scripts" for ::1 at 2015-06-03 15:42:05 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ScriptsController#index as HTML
+  [1m[35mScript Load (0.2ms)[0m  SELECT "scripts".* FROM "scripts"
+  Rendered scripts/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 3925ms (Views: 3903.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/scripts" for ::1 at 2015-06-03 15:42:09 -0500
+Processing by ScriptsController#index as HTML
+  [1m[36mScript Load (0.2ms)[0m  [1mSELECT "scripts".* FROM "scripts"[0m
+  Rendered scripts/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 76ms (Views: 74.9ms | ActiveRecord: 0.2ms)
