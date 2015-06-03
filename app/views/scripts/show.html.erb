@@ -17,25 +17,30 @@
 
 <br></br>
 <br></br>
-<div class="videoDiv">    
-	<h2 style="margin-left: 35px; color: white;"><%= @script.scriptname %></h2>
-       <!-- <center> -->
-          <% if @vids.empty? %>
-            <%= video_tag [], :size => "480x480", :controls => true, :autobuffer => true, :poster => 'screenshot.png' %>
-          <% else %>
-            <figure id="video_player">
-              <div id="video_container">
-                <%= video_tag [@vids.first.video.url], :controls => true, :autobuffer => true %>
-              </div>
-              <figcaption>
-                <% @vids.each do |vid| %>
-                  <%= link_to image_tag("scene"+vid.scene.sceneNumber.to_s+".png"), vid.video.url %>
-                <% end %>
-              </figcaption>
-            </figure>
-          <% end %>
-        <br></br>
-	<div class="scene-buttons-container">
+<div class="videoDiv">
+  <% if @vids.empty? %>
+    <h2 style="margin-left: 35px; color: white;"><%= @script.scriptname %></h2>
+    <div id="video_container">
+      <%= video_tag [], :size => "480x480", :controls => true, :autobuffer => true, :poster => 'screenshot.png' %>
+    </div>         
+  <% else %>
+    <div>
+      <h2 style="margin-left: 35px; color: white; display: inline-block"><%= @script.scriptname %></h2>
+      <p style="float: right; color: white; margin-right:2%; margin-top:2%; font-size: 25px;">Playlist<p>
+    </div>  
+    <figure id="video_player">
+      <div id="video_container">
+        <%= video_tag [@vids.first.video.url], :controls => true, :autobuffer => true %>
+      </div>
+      <figcaption>
+        <% @vids.each do |vid| %>
+          <%= link_to image_tag("scene"+vid.scene.sceneNumber.to_s+".png"), vid.video.url %>
+        <% end %>
+      </figcaption>
+    </figure>
+  <% end %>
+  <br></br>
+  <div class="scene-buttons-container">
     <% @scenes.each do |s| %>
       <% if s.numOfVids == 0 %>
         <%= link_to "Scene "+s.sceneNumber.to_s, script_scene_path(@script, s), class: "scene_buttons_white",
@@ -45,17 +50,17 @@
       :onclick=>"window.open(this.href,'popUpWindow', 'height=600,width=600,left=300,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');return false;" %>
       <% end %>
     <% end %>
-	</div>
+  </div>
 </center>
 </div>
 
-<div class="box"><h3>Production Notes</h3>
-<p><%= @script.notes%></p>
-    </div>
-<br></br>
 <div class="box"><h3>Plot</h3>
-<p><%= @script.summary%></p>
-    </div>
+  <p><%= @script.summary%></p>
+</div>
+<br>
+<div class="box"><h3>Production Notes</h3>
+  <p><%= @script.notes%></p>
+</div>
 <br></br>
 <ul class="share-buttons">
   <td><a href="https://www.facebook.com/sharer/sharer.php?u=&t=" title="Share on Facebook" target="_blank"><%= image_tag "flat_web_icon_set/color/Facebook.png" %></a></td>
@@ -138,20 +143,4 @@
     if ((currentVid + 1) >= lnkNum) { nextVid = 0 } else { nextVid = currentVid+1 }
       playVid(nextVid);
   });
-
-  /*
-  var links = video_player.getElementsByTagName('a');
-  for (var i=0; i<links.length; i++) {
-    links[i].onclick = handler;
-  }
-
-  function handler(e) {
-    e.preventDefault();
-    videotarget = this.getAttribute("href");
-    video = document.querySelector("#video_player video");
-    source = document.querySelectorAll("#video_player video");
-    source[0].src = videotarget;
-    video.load();
-    video.play();
-  }*/
 </script>

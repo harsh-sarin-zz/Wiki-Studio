@@ -13,7 +13,7 @@ class ClipsController < ApplicationController
 			vids = vids + 1
 			@scene.numOfVids = vids
 			@scene.save
-			render :text => '<script type="text/javascript"> window.close() </script>'
+			render :text => '<script type="text/javascript"> window.close(); </script>'
 		else
 			render 'new'
 		end
