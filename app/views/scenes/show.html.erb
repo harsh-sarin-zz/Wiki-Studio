@@ -1,7 +1,6 @@
 <h2><%= @script.scriptname %> - Scene <%= @scene.sceneNumber %></h2>
 <div class="action-button">
-	<button type="button" class="btn btn-default btn-sm" style="margin-right:2%;">Claim Scene 1</button>
-	<button type="button" class="btn btn-default btn-sm" style="margin-right:2%;">Print Scene 1 Script</button>
+	<button type="button" class="btn btn-default btn-sm" style="margin-right:2%;">Print Script</button>
 	<%= link_to "Upload Video", new_script_scene_clip_path(@script,@scene), class: "btn btn-default btn-sm" %>
 </div>
 <br>
@@ -11,4 +10,4 @@
 <h4>Character Guidelines</h4>
 <p><%= @scene.characterGuideline %></p>
 <br><br>
-<p><%= @scene.sceneText %></p>
+<p><%= simple_format(@scene.sceneText) %></p>

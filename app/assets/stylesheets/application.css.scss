@@ -45,7 +45,7 @@ h1 {
 	text-align: center;
 	font-size: 80px;
     font-weight:700;
-	padding-top: 20%;
+	padding-top: 10%;
     color: white;
 }
 
@@ -73,7 +73,7 @@ p {
 	text-align:center;
 }
 
-#script-name  {
+.script-name  {
 			margin-left: 55%;
 			font-size: 2em;
 			  display:block;
@@ -96,16 +96,16 @@ p {
 		              color 0.3s ease-out;*/
 			}
 			
-#script-name:link {
+.script-name:link {
 	color:#fffff;
 }
 
-#script-name:visited {color: #FFFFFF; } 
+.script-name:visited {color: #FFFFFF; } 
 
 		
 
-			#script-name:hover,
-			#script-name:active {
+			.script-name:hover,
+			.script-name:active {
 			  /*color: white;
 			  border-color: #C30017;*/
 			  color: #FFFFF;

@@ -11,12 +11,8 @@ class ScriptsController < ApplicationController
 		@scenes.each do |scene|
 			@clips = scene.clips
 			if !(@clips.empty?) then
-				@vids.push @clips.order("votecount DESC").first
+				@vids.push @clips.order("created_at DESC").first
 			end
-			#if !(@clips.empty?) then
-			#	@clip = @clips.first
-			#	break
-			#end
 		end
 	end
 end
