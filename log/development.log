@@ -34310,3 +34310,194 @@ Completed 200 OK in 3522ms (Views: 3493.0ms | ActiveRecord: 0.8ms)
 
 
 Started GET "/assets/application.self-9af05bceaeb55a16c250ff80e46d2372bb0b0a216adc8590df3c90f5685ceb99.css?body=1" for ::1 at 2015-05-27 21:15:59 -0500
+
+
+Started GET "/" for ::1 at 2015-06-02 17:52:20 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ScriptsController#index as HTML
+  [1m[35mScript Load (0.5ms)[0m  SELECT "scripts".* FROM "scripts"
+  Rendered scripts/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 521ms (Views: 497.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/clips.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-02 17:52:21 -0500
+
+
+Started GET "/assets/comments.self-6568e4e3a650551b75ff4a65ae0d8491c0f3df0420b89f281caa3ea14e0e378a.css?body=1" for ::1 at 2015-06-02 17:52:21 -0500
+
+
+Started GET "/assets/scenes.self-5231b3e38b8c7d71c018f96483ed5f56d442398d50262fe3cd883acb51cae09b.css?body=1" for ::1 at 2015-06-02 17:52:21 -0500
+
+
+Started GET "/assets/scripts.self-0f17ce09ef1325943ccc26dff8f8d573478659b2759fdc00190e92ea7c456df7.css?body=1" for ::1 at 2015-06-02 17:52:21 -0500
+
+
+Started GET "/assets/application.self-9af05bceaeb55a16c250ff80e46d2372bb0b0a216adc8590df3c90f5685ceb99.css?body=1" for ::1 at 2015-06-02 17:52:21 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-02 17:52:21 -0500
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2015-06-02 17:52:21 -0500
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2015-06-02 17:52:21 -0500
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2015-06-02 17:52:21 -0500
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2015-06-02 17:52:21 -0500
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2015-06-02 17:52:21 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2015-06-02 17:52:21 -0500
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2015-06-02 17:52:21 -0500
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2015-06-02 17:52:21 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2015-06-02 17:52:21 -0500
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2015-06-02 17:52:21 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2015-06-02 17:52:21 -0500
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2015-06-02 17:52:21 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-06-02 17:52:21 -0500
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-02 17:52:21 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-06-02 17:52:21 -0500
+
+
+Started GET "/assets/clips.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-02 17:52:21 -0500
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-02 17:52:21 -0500
+
+
+Started GET "/assets/scenes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-02 17:52:21 -0500
+
+
+Started GET "/assets/scripts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-02 17:52:21 -0500
+
+
+Started GET "/assets/application.self-b33329976d44262266e0073bfcac02aa87cb5773cf106eee2014909e7a9092aa.js?body=1" for ::1 at 2015-06-02 17:52:21 -0500
+
+
+Started GET "/scripts/1" for ::1 at 2015-06-02 17:52:27 -0500
+Processing by ScriptsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mScript Load (0.3ms)[0m  [1mSELECT  "scripts".* FROM "scripts" WHERE "scripts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mScene Load (2.2ms)[0m  SELECT "scenes".* FROM "scenes" WHERE "scenes"."script_id" = ?  [["script_id", 1]]
+  [1m[36mClip Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1[0m  [["scene_id", 1]]
+  [1m[35mClip Exists (0.1ms)[0m  SELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1  [["scene_id", 2]]
+  [1m[36mClip Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1[0m  [["scene_id", 3]]
+  [1m[35mClip Exists (0.1ms)[0m  SELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1  [["scene_id", 4]]
+  [1m[36mClip Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1[0m  [["scene_id", 5]]
+  [1m[35mClip Exists (0.1ms)[0m  SELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1  [["scene_id", 6]]
+  [1m[36mClip Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1[0m  [["scene_id", 7]]
+  [1m[35mClip Exists (0.1ms)[0m  SELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1  [["scene_id", 8]]
+  [1m[36mClip Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "clips" WHERE "clips"."scene_id" = ? LIMIT 1[0m  [["scene_id", 9]]
+  [1m[35mComment Load (0.5ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."script_id" = ?  [["script_id", 1]]
+  Rendered scripts/show.html.erb within layouts/application (93.4ms)
+Completed 200 OK in 305ms (Views: 180.3ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/" for ::1 at 2015-06-03 20:44:21 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ScriptsController#index as HTML
+  [1m[35mScript Load (0.5ms)[0m  SELECT "scripts".* FROM "scripts"
+  Rendered scripts/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 588ms (Views: 564.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/clips.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-03 20:44:21 -0500
+
+
+Started GET "/assets/comments.self-6568e4e3a650551b75ff4a65ae0d8491c0f3df0420b89f281caa3ea14e0e378a.css?body=1" for ::1 at 2015-06-03 20:44:21 -0500
+
+
+Started GET "/assets/scenes.self-5231b3e38b8c7d71c018f96483ed5f56d442398d50262fe3cd883acb51cae09b.css?body=1" for ::1 at 2015-06-03 20:44:21 -0500
+
+
+Started GET "/assets/scripts.self-0f17ce09ef1325943ccc26dff8f8d573478659b2759fdc00190e92ea7c456df7.css?body=1" for ::1 at 2015-06-03 20:44:21 -0500
+
+
+Started GET "/assets/application.self-9af05bceaeb55a16c250ff80e46d2372bb0b0a216adc8590df3c90f5685ceb99.css?body=1" for ::1 at 2015-06-03 20:44:21 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-03 20:44:21 -0500
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2015-06-03 20:44:21 -0500
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2015-06-03 20:44:21 -0500
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2015-06-03 20:44:21 -0500
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2015-06-03 20:44:21 -0500
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2015-06-03 20:44:22 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2015-06-03 20:44:22 -0500
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2015-06-03 20:44:22 -0500
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2015-06-03 20:44:22 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2015-06-03 20:44:22 -0500
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2015-06-03 20:44:22 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2015-06-03 20:44:22 -0500
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2015-06-03 20:44:22 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-06-03 20:44:22 -0500
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-03 20:44:22 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-06-03 20:44:22 -0500
+
+
+Started GET "/assets/clips.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-03 20:44:22 -0500
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-03 20:44:22 -0500
+
+
+Started GET "/assets/scenes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-03 20:44:22 -0500
+
+
+Started GET "/assets/scripts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-03 20:44:22 -0500
+
+
+Started GET "/assets/application.self-b33329976d44262266e0073bfcac02aa87cb5773cf106eee2014909e7a9092aa.js?body=1" for ::1 at 2015-06-03 20:44:22 -0500
