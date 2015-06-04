@@ -34520,3 +34520,17 @@ Started GET "/assets/application.self-b33329976d44262266e0073bfcac02aa87cb5773cf
 =======
 >>>>>>> 08cc9cc62c4b4920da568d23bcc11a1cada018ab
 >>>>>>> origin/master
+
+
+Started GET "/" for ::1 at 2015-06-03 20:45:20 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ScriptsController#index as HTML
+  [1m[35mScript Load (0.2ms)[0m  SELECT "scripts".* FROM "scripts"
+  Rendered scripts/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 3296ms (Views: 3275.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/scripts.self-d757d21fc92885e4c3b246806d0029e672afffc79a734f6c895bbbf28ca9f33c.css?body=1" for ::1 at 2015-06-03 20:45:24 -0500
+
+
+Started GET "/assets/application.self-1b57aea27e8170e19fca27c3b3643b03e95bc64427144fb0629644aba8784501.css?body=1" for ::1 at 2015-06-03 20:45:24 -0500
