@@ -12,21 +12,12 @@ nav {
 .top {
 	text-align: inline;
 }
-/*
-.comedy {
-	padding-top: 2%;
-}
-*/
+
 button.link {
 	background: none;
 	border: none;
 }
 
-/*body {
-	width:100%;
-	margin-left:5%;
-	margin-right:5%;
-}*/
 
 #newScript {
 	font-color: black;
@@ -54,59 +45,6 @@ button.link {
 
 .mainBody{
 	width:100%;
-}
-
-
-//Upload script css (new.html.erb)
-#top-form {
-	padding-left: 10%;
-	padding-right: 10%;
-	padding-top: 3%;
-	width:100%;
-}
-
-#top-left {
-	float:left;
-	width:30%;
-}
-
-#top-right {
-	float:right;
-	width:30%;
-}
-
-#top-middle {
-	float:left;
-	width:30%;
-}
-
-.left {
-	float:left;
-	text-align: left;
-	width:8%;
-	padding-top: 4%;
-	font-size: 1.5em;
-}
-
-.script {
-	width:28%;
-	float:left;
-}
-
-.character {
-	width:28%;
-	float:left;
-	margin-left: 4%;
-}
-
-.setting {
-	width:28%;
-	float:right;
-}
-
-#submit {
-	text-align: center;
-	margin-top: 3%;
 }
 
 .videoDiv {
@@ -140,11 +78,6 @@ button.link {
 	text-align: center;
 }
 
-iframe {
-    border-color:white;
-    border-width: 1px;
-    border-style:solid;
-}
 
 .box {
     margin-right:5%;
@@ -171,14 +104,6 @@ iframe {
 }
 
 
-
-#video_player {
-	display: table;
-	line-height: 0;
-	font-size: 0;
-	background: #000;
-}
-
 #video_container { 
 	position: relative;
 	float: left;
@@ -186,42 +111,75 @@ iframe {
 	width: 100%;
 	height: 100%;
 }
-
-
-#video_player div, #video_player figcaption {
-	display: table-cell;
-	vertical-align: top;
+/*
+#playlist {
+	width: 10%;
 }
 
-#video_container video {
-	position: absolute; 
-	display: block;
-	width: 100%;
-	height: 100%;
-	top: 0;
-}
-
-#video_player figcaption { 
-	width: 10%; 
-}
-
-
-#video_player figcaption a {
+#playlist a {
 	opacity: .5;
 	display: block;
 	transition: 1s opacity;
 }
 
-#video_player figcaption a img{
+#playlist a img{
 	width: 80%;
 	height: 50%;
 	margin-right: 20%;
 	padding-top: 10%;
 }
+*/
+
+#video_player {
+  display: table;
+  line-height: 0;
+  font-size: 0;
+  background: #000;
+}
+
+#video_container { 
+  position: relative;
+  float: left;
+  padding-top: 50.25%;
+  width: 100%;
+  height: 100%;
+}
+
+
+#video_player div, #video_player figcaption {
+  display: table-cell;
+  vertical-align: top;
+}
+
+#video_container video {
+  position: absolute; 
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+#video_player figcaption { 
+  width: 10%; 
+}
+
+
+#video_player figcaption a {
+  opacity: .5;
+  display: block;
+  transition: 1s opacity;
+}
+
+#video_player figcaption a img{
+  width: 80%;
+  height: 50%;
+  margin-right: 20%;
+  padding-top: 10%;
+}
 
 #video_player figure video {
-	width: 100%;
-	height: auto;
+  width: 100%;
+  height: auto;
 }
 
 #video_player figcaption a.currentvid,

@@ -1,24 +1,13 @@
-<!--<div class="landing">-->
-    <div class="top">
-        <h1>Wiki Studio</h1>
-    </div>
+<div class="top">
+    <h1>Wiki Studio</h1>
+</div>
 
-    <p style="text-align:center;color:white;font-size:1.5em;">Wiki Studio is a collaborative video platform where everyone can be part of a fun project</p>
-
-<!-- <div class="container">
-        <div id="scriptsDiv" class="existing">
-        <div class="row">
-            <div class="col-lg-7 col-sm-8">
-                <hr class="section-heading-spacer">
-                    <div class="clearfix"></div> -->
-    <div class="container" id="existing">
-        <h2 class="section-heading">Click the script below to start</h2>
-        <% @scriptList.each do |s| %>
-                <% if s.genre == "drama"%>
-                    <p id="script-name"><%= link_to s.scriptname, script_path(s) %></p>
-                <% end %>
-            <% end %>        
-    </div>
-    <br><br><br>
-<!--</div>-->
-
+<p style="text-align:center;color:white;font-size:1.5em;">Wiki Studio is a collaborative video platform where everyone can be part of a fun project</p>
+<div class="container" id="existing">
+    <h2 class="section-heading">Click the script below to start</h2>
+    <% @scriptList.each do |s| %>
+        <% if s.genre == "drama"%>
+            <p><%= link_to s.scriptname, script_path(s), class: "script-name" %></p>
+        <% end %>
+    <% end %>        
+</div>
